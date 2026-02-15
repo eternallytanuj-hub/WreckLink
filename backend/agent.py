@@ -1,7 +1,7 @@
 
 import os
 import json
-import numpy as np
+import math
 import random
 from datetime import datetime
 from dotenv import load_dotenv
@@ -38,12 +38,12 @@ def calculate_drift_physics(last_known_lat: float, last_known_lon: float, wind_u
     drift_lon_m = wind_u * 3600 * hours
     
     # Process noise (stochastic)
-    noise_lat = np.random.normal(0, 0.05)
-    noise_lon = np.random.normal(0, 0.05)
+    noise_lat = random.gauss(0, 0.05)
+    noise_lon = random.gauss(0, 0.05)
     
     # Coordinate conversion
-    dlat = (drift_lat_m / R) * (180 / np.pi)
-    dlon = (drift_lon_m / (R * np.cos(np.radians(last_known_lat)))) * (180 / np.pi)
+    dlat = (drift_lat_m / R) * (180 / math.pi)
+    dlon = (drift_lon_m / (R * math.cos(math.radians(last_known_lat)))) * (180 / math.pi)
     
     pred_lat = last_known_lat + dlat + noise_lat
     pred_lon = last_known_lon + dlon + noise_lon
