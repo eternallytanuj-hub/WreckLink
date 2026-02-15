@@ -1,0 +1,339 @@
+{
+  "globalStats": {
+    "totalIncidents": 244,
+    "totalFatalities": 4412,
+    "mostDangerousZone": "Moscow, Russia",
+    "yearTrend": {
+      "1919": 1,
+      "1920": 1,
+      "1921": 2,
+      "1938": 4,
+      "1946": 4,
+      "1970": 4,
+      "1991": 1,
+      "1922": 1,
+      "1927": 1,
+      "1928": 4,
+      "1939": 2,
+      "1948": 2,
+      "1956": 2,
+      "1957": 3,
+      "1993": 4,
+      "2000": 5,
+      "1923": 2,
+      "1941": 2,
+      "1947": 5,
+      "1977": 5,
+      "1989": 4,
+      "1999": 2,
+      "1935": 3,
+      "1952": 6,
+      "1954": 6,
+      "1960": 7,
+      "1962": 7,
+      "1966": 5,
+      "1968": 3,
+      "1969": 2,
+      "1971": 3,
+      "1972": 4,
+      "1973": 5,
+      "1975": 7,
+      "1976": 5,
+      "1979": 7,
+      "1982": 1,
+      "2001": 2,
+      "2002": 3,
+      "2007": 3,
+      "1926": 1,
+      "1945": 2,
+      "1961": 6,
+      "1965": 5,
+      "1984": 3,
+      "1992": 4,
+      "1994": 3,
+      "2009": 2,
+      "1940": 2,
+      "1943": 1,
+      "1951": 6,
+      "1958": 4,
+      "1959": 4,
+      "1978": 2,
+      "1980": 3,
+      "2003": 1,
+      "1931": 4,
+      "1944": 2,
+      "1953": 4,
+      "1955": 4,
+      "1963": 4,
+      "1986": 3,
+      "1996": 2,
+      "1932": 1,
+      "1934": 1,
+      "2005": 3,
+      "1936": 1,
+      "1987": 2,
+      "1995": 1,
+      "1974": 4,
+      "1981": 2,
+      "1988": 2,
+      "1967": 1,
+      "1990": 4,
+      "1949": 1,
+      "1964": 3,
+      "1998": 1,
+      "2008": 1,
+      "1950": 2,
+      "1983": 1,
+      "2006": 1
+    }
+  },
+  "zones": [
+    {
+      "name": "Cleveland, Ohio",
+      "lat": 41.4993,
+      "lon": -81.6944,
+      "severityScore": 0.8,
+      "trend": "Decreasing",
+      "primaryRisk": "Fire",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 26
+    },
+    {
+      "name": "Paris, France",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "severityScore": 1.7,
+      "trend": "Decreasing",
+      "primaryRisk": "Stall",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 77
+    },
+    {
+      "name": "Bucharest, Romania",
+      "lat": 44.4268,
+      "lon": 26.1025,
+      "severityScore": 1.4,
+      "trend": "Decreasing",
+      "primaryRisk": "Fire",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 68
+    },
+    {
+      "name": "Moscow, Russia",
+      "lat": 55.7558,
+      "lon": 37.6173,
+      "severityScore": 8.5,
+      "trend": "Decreasing",
+      "primaryRisk": "Severe Weather",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 798
+    },
+    {
+      "name": "New York, New York",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "severityScore": 7.1,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 425
+    },
+    {
+      "name": "Rio de Janeiro, Brazil",
+      "lat": -22.9068,
+      "lon": -43.1729,
+      "severityScore": 5.6,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": -5.0,
+        "v": 2.0
+      },
+      "fatalities": 311
+    },
+    {
+      "name": "Sao Paulo, Brazil",
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "severityScore": 6.9,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": -5.0,
+        "v": 2.0
+      },
+      "fatalities": 404
+    },
+    {
+      "name": "Burbank, California",
+      "lat": 34.1808,
+      "lon": -118.3089,
+      "severityScore": 1.0,
+      "trend": "Decreasing",
+      "primaryRisk": "Fog",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 41
+    },
+    {
+      "name": "Chicago, Illinois",
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "severityScore": 3.0,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 156
+    },
+    {
+      "name": "Amsterdam, Netherlands",
+      "lat": 52.3676,
+      "lon": 4.9041,
+      "severityScore": 1.2,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 53
+    },
+    {
+      "name": "Near Moscow, Russia",
+      "lat": 55.5,
+      "lon": 37.6,
+      "severityScore": 0.2,
+      "trend": "Stable",
+      "primaryRisk": "Unknown",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 9
+    },
+    {
+      "name": "Anchorage, Alaska",
+      "lat": 61.2181,
+      "lon": -149.9003,
+      "severityScore": 3.0,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": -3.0,
+        "v": -1.0
+      },
+      "fatalities": 152
+    },
+    {
+      "name": "Cairo, Egypt",
+      "lat": 30.0444,
+      "lon": 31.2357,
+      "severityScore": 6.1,
+      "trend": "Decreasing",
+      "primaryRisk": "Severe Weather",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 367
+    },
+    {
+      "name": "Denver, Colorado",
+      "lat": 39.7392,
+      "lon": -104.9903,
+      "severityScore": 1.3,
+      "trend": "Decreasing",
+      "primaryRisk": "Severe Weather",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 58
+    },
+    {
+      "name": "Bogota, Colombia",
+      "lat": 4.711,
+      "lon": -74.0721,
+      "severityScore": 8.0,
+      "trend": "Decreasing",
+      "primaryRisk": "Mountainous Terrain",
+      "driftVector": {
+        "u": -5.0,
+        "v": -2.0
+      },
+      "fatalities": 483
+    },
+    {
+      "name": "Ankara, Turkey",
+      "lat": 39.9334,
+      "lon": 32.8597,
+      "severityScore": 3.8,
+      "trend": "Decreasing",
+      "primaryRisk": "Severe Weather",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 229
+    },
+    {
+      "name": "Tehran, Iran",
+      "lat": 35.6892,
+      "lon": 51.389,
+      "severityScore": 6.4,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 413
+    },
+    {
+      "name": "Rome, Italy",
+      "lat": 41.9028,
+      "lon": 12.4964,
+      "severityScore": 2.9,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": 8.0,
+        "v": 2.0
+      },
+      "fatalities": 170
+    },
+    {
+      "name": "Manila, Philippines",
+      "lat": 14.5995,
+      "lon": 120.9842,
+      "severityScore": 3.4,
+      "trend": "Decreasing",
+      "primaryRisk": "Engine Failure",
+      "driftVector": {
+        "u": -5.0,
+        "v": -2.0
+      },
+      "fatalities": 172
+    }
+  ]
+}

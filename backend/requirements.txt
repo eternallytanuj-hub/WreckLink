@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+langchain
+langchain-groq
+langchain-community
+langchain-core
+langchain-openai
+duckduckgo-search
+requests
+websockets
+twilio
+numpy

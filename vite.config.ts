@@ -5,7 +5,7 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
-    host: "::",
+    host: "127.0.0.1",
     port: 8080,
     hmr: {
       overlay: false,
@@ -20,6 +20,26 @@ export default defineConfig(({ mode }) => ({
         target: 'http://api.aviationstack.com',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/aviationstack/, ''),
+      },
+      '/api/ships': {
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/predict': {
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/simulate-drift': {
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/api/rescue-helpline': {
+        target: 'http://127.0.0.1:8000',
+        changeOrigin: true,
+        secure: false,
       },
     },
   },

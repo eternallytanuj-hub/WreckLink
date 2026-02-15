@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { motion } from "framer-motion";
 import Navbar from "@/components/Navbar";
 import FlightMap from "@/components/FlightMap";
@@ -6,6 +6,8 @@ import FlightSearch from "@/components/FlightSearch";
 import AircraftPanel from "@/components/AircraftPanel";
 import AltitudeLegend from "@/components/AltitudeLegend";
 import SignalLossFeed from "@/components/SignalLossFeed";
+import { AnalyticsPanel } from "@/components/AnalyticsPanel";
+import SimulationLogger from "@/components/SimulationLogger";
 import { useFlightData } from "@/hooks/useFlightData";
 import { AircraftState } from "@/lib/aviation";
 import {
@@ -26,8 +28,137 @@ const Dashboard = () => {
   const [selectedAircraft, setSelectedAircraft] = useState<AircraftState | null>(null);
   const [showRiskZones, setShowRiskZones] = useState(true);
   const [showFlightPaths, setShowFlightPaths] = useState(false);
+  const [showAnalyticsPanel, setShowAnalyticsPanel] = useState(false);
 
-  const handleSelect = useCallback((a: AircraftState | null) => setSelectedAircraft(a), []);
+  // Simulation State
+  const [simState, setSimState] = useState<'idle' | 'crashing' | 'impact' | 'scanning' | 'detected'>('idle');
+  const [simCoords, setSimCoords] = useState<{ lat: number, lon: number } | null>(null);
+  const [ships, setShips] = useState<any[]>([]);
+  const [loadingShips, setLoadingShips] = useState(false);
+  const [helplineInfo, setHelplineInfo] = useState<{ agency: string, number: string, country: string } | null>(null);
+  const [loadingHelpline, setLoadingHelpline] = useState(false);
+  const [reconData, setReconData] = useState<string | null>(null);
+  const [loadingRecon, setLoadingRecon] = useState(false);
+  const [showShips, setShowShips] = useState(false);
+  const [mapCenter, setMapCenter] = useState<{ lat: number, lon: number } | null>(null);
+
+  const [locateTrigger, setLocateTrigger] = useState(0);
+
+  const handleSelect = useCallback((a: AircraftState | null) => {
+    setSelectedAircraft(a);
+    if (a && a.latitude && a.longitude) {
+      setLocateTrigger((t) => t + 1); // Trigger map movement
+      // Reset simulation state when a new aircraft is selected
+      setSimState('idle');
+      setSimCoords(null);
+      setHelplineInfo(null);
+      setReconData(null);
+
+      // Fetch nearest ships and helpline for the selected aircraft
+      setLoadingShips(true);
+      setLoadingHelpline(true);
+
+      // Parallel fetch
+      Promise.all([
+        fetch('/api/ships', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            lat: a.latitude,
+            lon: a.longitude,
+            radius: 200
+          })
+        }).then(res => res.json()),
+        fetch('/api/rescue-helpline', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ lat: a.latitude, lon: a.longitude })
+        }).then(res => res.json())
+      ]).then(([shipData, helplineData]) => {
+        if (shipData.ships) setShips(shipData.ships);
+        if (helplineData && !helplineData.error) setHelplineInfo(helplineData);
+      })
+        .catch(err => console.error("Failed to fetch contextual data", err))
+        .finally(() => {
+          setLoadingShips(false);
+          setLoadingHelpline(false);
+        });
+
+    } else {
+      setShips([]);
+      setHelplineInfo(null);
+    }
+  }, []);
+
+  const handleSimulateCrash = useCallback((coords: { lat: number, lon: number }) => {
+    setSimState('crashing');
+    setSimCoords(coords);
+    setShips([]); // Clear previous ships
+    setHelplineInfo(null); // Clear previous helpline info
+    setReconData(null);
+    setLoadingRecon(true);
+
+    // Trigger SMS Alert
+    if (selectedAircraft) {
+      fetch('/api/send-alert', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          lat: coords.lat,
+          lon: coords.lon,
+          flight_id: selectedAircraft.callsign || selectedAircraft.icao24,
+          wind_data: "Evaluating..." // Could pass real wind if we had it here easily, but server has it too
+        })
+      }).catch(e => console.error("SMS Alert Failed", e));
+    }
+
+    // Fetch Recon Data immediately
+    fetch('/api/recon', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ lat: coords.lat, lon: coords.lon })
+    })
+      .then(res => res.json())
+      .then(data => setReconData(data.recon))
+      .catch(e => setReconData("Recon unavailable."))
+      .finally(() => setLoadingRecon(false));
+
+    // Simulation sequence
+    setTimeout(() => setSimState('impact'), 3000);
+    setTimeout(() => {
+      setSimState('scanning');
+      // Fetch ships and verify helpline on simulate
+      Promise.all([
+        fetch('/api/ships', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...coords, radius: 200 })
+        }).then(res => res.json()),
+        // Re-fetch helpline for precise crash location if needed, or use existing
+        fetch('/api/rescue-helpline', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ lat: coords.lat, lon: coords.lon })
+        }).then(res => res.json())
+      ]).then(([shipData, helplineData]) => {
+        if (shipData.ships) setShips(shipData.ships);
+        if (helplineData && !helplineData.error) setHelplineInfo(helplineData);
+      })
+        .catch(err => console.error("Failed to fetch simulation context", err));
+
+      // Fetch Rescue Helpline Info
+      fetch('/api/rescue-helpline', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(coords)
+      })
+        .then(res => res.json())
+        .then(data => setHelplineInfo(data))
+        .catch(err => console.error("Failed to fetch helpline", err));
+
+    }, 5000);
+    setTimeout(() => setSimState('detected'), 8000);
+  }, []);
 
   const airborneCount = aircraft.filter((a) => !a.onGround).length;
   const groundedCount = aircraft.filter((a) => a.onGround).length;
@@ -36,6 +167,36 @@ const Dashboard = () => {
       aircraft.reduce((sum, a) => sum + (a.baroAltitude ?? 0), 0) / aircraft.filter((a) => a.baroAltitude).length || 0
     )
     : 0;
+
+  // Fetch ships when toggled
+  useEffect(() => {
+    if (showShips && mapCenter) {
+      const fetchShips = async () => {
+        setLoadingShips(true);
+        try {
+          const res = await fetch('/api/ships', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ lat: mapCenter.lat, lon: mapCenter.lon })
+          });
+          const data = await res.json();
+          if (data.ships) {
+            setShips(data.ships);
+          }
+        } catch (e) {
+          console.error("Ship fetch failed", e);
+        } finally {
+          setLoadingShips(false);
+        }
+      };
+
+      // Debounce slightly
+      const timer = setTimeout(fetchShips, 500);
+      return () => clearTimeout(timer);
+    } else if (!showShips && simState === 'idle') {
+      setShips([]);
+    }
+  }, [showShips, mapCenter, simState]);
 
   return (
     <div className="h-screen flex flex-col bg-background overflow-hidden">
@@ -88,14 +249,37 @@ const Dashboard = () => {
           <button
             onClick={() => setShowRiskZones(!showRiskZones)}
             className={`group flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[11px] font-mono uppercase tracking-wider transition-all duration-300 ${showRiskZones
-                ? "bg-destructive/15 text-destructive border border-destructive/25 shadow-[0_0_12px_hsl(var(--destructive)/0.15)]"
-                : "bg-secondary/60 text-muted-foreground border border-border/60 hover:border-border"
+              ? "bg-destructive/15 text-destructive border border-destructive/25 shadow-[0_0_12px_hsl(var(--destructive)/0.15)]"
+              : "bg-secondary/60 text-muted-foreground border border-border/60 hover:border-border"
               }`}
           >
             <Shield className="w-3 h-3" />
             {showRiskZones ? <Eye className="w-3 h-3" /> : <EyeOff className="w-3 h-3" />}
             <span className="hidden sm:inline">Risk</span>
           </button>
+
+          <button
+            onClick={() => setShowShips(!showShips)}
+            className={`group flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[11px] font-mono uppercase tracking-wider transition-all duration-300 ${showShips
+              ? "bg-cyan-500/15 text-cyan-400 border border-cyan-500/25 shadow-[0_0_12px_rgba(6,182,212,0.15)]"
+              : "bg-secondary/60 text-muted-foreground border border-border/60 hover:border-border"
+              }`}
+          >
+            {loadingShips ? <Loader2 className="w-3 h-3 animate-spin" /> : <span className="text-lg leading-none">⚓</span>}
+            <span className="hidden sm:inline">Maritime</span>
+          </button>
+
+          <button
+            onClick={() => setShowAnalyticsPanel(!showAnalyticsPanel)}
+            className={`group flex items-center gap-1.5 px-3 py-1.5 rounded-md text-[11px] font-mono uppercase tracking-wider transition-all duration-300 ${showAnalyticsPanel
+              ? "bg-blue-500/15 text-blue-400 border border-blue-500/25 shadow-[0_0_12px_rgba(59,130,246,0.15)]"
+              : "bg-secondary/60 text-muted-foreground border border-border/60 hover:border-border"
+              }`}
+          >
+            <Activity className="w-3 h-3" />
+            <span className="hidden sm:inline">Analytics</span>
+          </button>
+
           <button
             onClick={() => refetch()}
             disabled={loading}
@@ -121,12 +305,41 @@ const Dashboard = () => {
             onSelectAircraft={handleSelect}
             showRiskZones={showRiskZones}
             showFlightPaths={showFlightPaths}
+
+            locateTrigger={locateTrigger}
+            simulation={{ state: simState, coords: simCoords }}
+            ships={ships}
+            onMapMove={setMapCenter}
           />
           <FlightSearch aircraft={aircraft} onSelect={handleSelect} />
           <AltitudeLegend />
           {selectedAircraft && (
-            <AircraftPanel aircraft={selectedAircraft} onClose={() => setSelectedAircraft(null)} />
+            <AircraftPanel
+              aircraft={selectedAircraft}
+              onClose={() => handleSelect(null)}
+              onSimulate={handleSimulateCrash}
+              simState={simState}
+              helplineInfo={helplineInfo}
+              loadingHelpline={loadingHelpline}
+              nearestShip={ships[0]}
+              loadingShips={loadingShips}
+              reconData={reconData}
+              loadingRecon={loadingRecon}
+            />
           )}
+
+          {/* Analytics Panel Overlay */}
+          {showAnalyticsPanel && (
+            <div className="absolute top-4 left-4 z-[900] w-[400px]">
+              <AnalyticsPanel />
+            </div>
+          )}
+
+          {/* Physics Simulation Logger Overlay */}
+          <SimulationLogger
+            isVisible={simState !== 'idle' && selectedAircraft !== null}
+            coords={simCoords}
+          />
 
           {/* Loading overlay */}
           {loading && aircraft.length === 0 && (
@@ -153,7 +366,11 @@ const Dashboard = () => {
         </div>
 
         {/* Signal Loss Feed Sidebar */}
-        <SignalLossFeed aircraft={aircraft} onSelect={handleSelect} />
+        <SignalLossFeed
+          aircraft={aircraft}
+          onSelect={handleSelect}
+          simulatedAircraft={simState !== 'idle' ? selectedAircraft : null}
+        />
       </div>
     </div>
   );

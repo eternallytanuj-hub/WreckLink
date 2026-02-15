@@ -4,11 +4,20 @@ import { AlertTriangle, MapPin, Radio } from "lucide-react";
 interface SignalLossFeedProps {
     aircraft: AircraftState[];
     onSelect: (aircraft: AircraftState) => void;
+    simulatedAircraft?: AircraftState | null;
 }
 
-export default function SignalLossFeed({ aircraft, onSelect }: SignalLossFeedProps) {
-    // Filter for aircraft with lost signal
-    const lostAircraft = aircraft.filter((a) => a.signalLost);
+export default function SignalLossFeed({ aircraft, onSelect, simulatedAircraft }: SignalLossFeedProps) {
+    // Filter for aircraft with lost signal AND NOT on ground
+    let lostAircraft = aircraft.filter((a) => a.signalLost && !a.onGround);
+
+    // Inject simulated crash alert
+    if (simulatedAircraft) {
+        // Deduplicate
+        lostAircraft = lostAircraft.filter(a => a.icao24 !== simulatedAircraft.icao24);
+        // Add to top essentially forcing it as an alert
+        lostAircraft.unshift({ ...simulatedAircraft, signalLost: true });
+    }
 
     // If no lost signals, render nothing or maybe a "Good Status" placeholder? 
     // User asked for "show signal lost messages", implying if there are any.

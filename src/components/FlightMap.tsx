@@ -11,6 +11,13 @@ interface FlightMapProps {
   onSelectAircraft: (a: AircraftState | null) => void;
   showRiskZones: boolean;
   showFlightPaths: boolean;
+  simulation?: {
+    state: 'idle' | 'crashing' | 'impact' | 'scanning' | 'detected';
+    coords: { lat: number, lon: number } | null;
+  };
+  locateTrigger?: number;
+  ships?: any[];
+  onMapMove?: (center: { lat: number, lon: number }) => void;
 }
 
 function createPlaneIcon(rotation: number, color: string) {
@@ -27,6 +34,10 @@ export default function FlightMap({
   selectedAircraft,
   onSelectAircraft,
   showRiskZones,
+  simulation,
+  locateTrigger = 0,
+  ships = [],
+  onMapMove
 }: FlightMapProps) {
   const mapRef = useRef<L.Map | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -36,18 +47,20 @@ export default function FlightMap({
   // useFlightTrack hook with callsign support
   const { path, plannedPath, flightInfo } = useFlightTrack(
     selectedAircraft?.icao24 || null,
-    selectedAircraft?.callsign || null,
-    selectedAircraft ? {
-      lat: selectedAircraft.latitude,
-      lon: selectedAircraft.longitude,
-      heading: selectedAircraft.trueTrack
-    } : null
+    selectedAircraft?.callsign || null
   );
 
   const pathRef = useRef<L.Polyline | null>(null);
   const plannedPathRef = useRef<L.Polyline | null>(null);
   const routeMarkersRef = useRef<L.LayerGroup | null>(null);
   const selectionLayerRef = useRef<L.LayerGroup | null>(null);
+
+  // Analytics Refs
+  const analyticsLayerRef = useRef<L.LayerGroup | null>(null);
+  const driftParticlesRef = useRef<L.LayerGroup | null>(null);
+  const scanLayerRef = useRef<L.LayerGroup | null>(null);
+  const shipLayerRef = useRef<L.LayerGroup | null>(null);
+  const [analyticsData, setAnalyticsData] = useState<any>(null);
 
   // Map State for LOD
   const [zoom, setZoom] = useState(4);
@@ -73,10 +86,31 @@ export default function FlightMap({
 
     L.control.zoom({ position: "bottomright" }).addTo(map);
 
-    markersRef.current = L.layerGroup().addTo(map);
-    riskLayerRef.current = L.layerGroup().addTo(map);
-    selectionLayerRef.current = L.layerGroup().addTo(map);
-    routeMarkersRef.current = L.layerGroup().addTo(map);
+    // Create custom panes for layering control
+    map.createPane('riskPane');
+    map.getPane('riskPane')!.style.zIndex = '350';
+
+    map.createPane('analyticsPane');
+    map.getPane('analyticsPane')!.style.zIndex = '360';
+
+    map.createPane('simulationPane');
+    map.getPane('simulationPane')!.style.zIndex = '370';
+
+    map.createPane('markerPane');
+    map.getPane('markerPane')!.style.zIndex = '600'; // High z-index for interaction
+
+    // Initialize layers with specific panes
+    riskLayerRef.current = L.layerGroup(undefined, { pane: 'riskPane' }).addTo(map);
+    analyticsLayerRef.current = L.layerGroup(undefined, { pane: 'analyticsPane' }).addTo(map);
+    driftParticlesRef.current = L.layerGroup(undefined, { pane: 'analyticsPane' }).addTo(map);
+    scanLayerRef.current = L.layerGroup(undefined, { pane: 'simulationPane' }).addTo(map);
+    shipLayerRef.current = L.layerGroup(undefined, { pane: 'markerPane' }).addTo(map); // High z-index for clicks
+
+    routeMarkersRef.current = L.layerGroup().addTo(map); // Default pane
+    selectionLayerRef.current = L.layerGroup().addTo(map); // Default pane
+
+    // Markers on top
+    markersRef.current = L.layerGroup(undefined, { pane: 'markerPane' }).addTo(map);
 
     mapRef.current = map;
 
@@ -84,6 +118,10 @@ export default function FlightMap({
     const updateMapState = () => {
       setZoom(map.getZoom());
       setBounds(map.getBounds());
+      if (onMapMove) {
+        const center = map.getCenter();
+        onMapMove({ lat: center.lat, lon: center.lng });
+      }
     };
 
     map.on('moveend', updateMapState);
@@ -208,7 +246,9 @@ export default function FlightMap({
           fillOpacity: 0.1,
           radius: 100000 * (0.5 + zone.riskIntensity), // Scale radius by intensity
           weight: 1,
-          dashArray: "4 4"
+          dashArray: "4 4",
+          pane: 'riskPane',
+          interactive: true // Ensure they are still clickable
         }).addTo(riskLayerRef.current!);
 
         // Detail popup
@@ -242,6 +282,221 @@ export default function FlightMap({
       });
     }
   }, [showRiskZones]);
+
+  // Load Analytics Data
+  useEffect(() => {
+    fetch('/data/advanced_analytics.json')
+      .then(res => res.json())
+      .then(setAnalyticsData)
+      .catch(e => console.error("Analytics load failed", e));
+  }, []);
+
+  // Render Analytics & Drift
+  useEffect(() => {
+    if (!mapRef.current || !analyticsLayerRef.current) return;
+
+    analyticsLayerRef.current.clearLayers();
+
+    if (showRiskZones && analyticsData) { // Reuse showRiskZones trigger for now
+      analyticsData.zones.forEach((zone: any) => {
+        // Severity Heatmap
+        const severityColor = zone.severityScore > 7 ? '#ff0000' : (zone.severityScore > 4 ? '#ff8800' : '#ffff00');
+        const radius = 50000 * (1 + zone.severityScore / 2);
+
+        const circle = L.circle([zone.lat, zone.lon], {
+          color: severityColor,
+          fillColor: severityColor,
+          fillOpacity: 0.15 + (zone.severityScore / 30),
+          radius: radius,
+          weight: 1,
+          className: 'animate-pulse-slow',
+          pane: 'analyticsPane',
+          interactive: true
+        }).addTo(analyticsLayerRef.current!);
+
+        // Drift Simulation
+        circle.on('click', () => {
+          if (!driftParticlesRef.current) return;
+          driftParticlesRef.current.clearLayers();
+
+          const particles: any[] = [];
+          for (let i = 0; i < 40; i++) {
+            const startLat = zone.lat + (Math.random() - 0.5) * 1.0;
+            const startLon = zone.lon + (Math.random() - 0.5) * 1.0;
+
+            const particle = L.circleMarker([startLat, startLon], {
+              radius: 2,
+              color: '#00ffff',
+              fillColor: '#00ffff',
+              fillOpacity: 0.9
+            }).addTo(driftParticlesRef.current!);
+
+            particles.push({
+              marker: particle,
+              lat: startLat,
+              lon: startLon,
+              u: zone.driftVector.u + (Math.random() - 0.5) * 3,
+              v: zone.driftVector.v + (Math.random() - 0.5) * 3,
+              life: 150
+            });
+          }
+
+          const animate = () => {
+            if (!driftParticlesRef.current) return;
+            let active = false;
+            particles.forEach(p => {
+              if (p.life > 0) {
+                active = true;
+                p.life--;
+                p.lat += p.v * 0.03;
+                p.lon += p.u * 0.03;
+                p.marker.setLatLng([p.lat, p.lon]);
+                p.marker.setStyle({ opacity: p.life / 150, fillOpacity: p.life / 150 });
+              } else {
+                driftParticlesRef.current?.removeLayer(p.marker);
+              }
+            });
+            if (active) requestAnimationFrame(animate);
+          };
+          animate();
+        });
+      });
+    } else {
+      driftParticlesRef.current?.clearLayers();
+    }
+  }, [showRiskZones, analyticsData]);
+
+  // Simulation Visuals
+  useEffect(() => {
+    if (!mapRef.current || !simulation) return;
+    const map = mapRef.current;
+
+    // Clear previous simulation artifacts if idle
+    if (simulation.state === 'idle') {
+      scanLayerRef.current?.clearLayers();
+      return;
+    }
+
+    if (simulation.state === 'crashing' && selectedAircraft && simulation.coords) {
+      // Draw dashed Line
+      scanLayerRef.current?.clearLayers();
+      L.polyline([
+        [selectedAircraft.latitude, selectedAircraft.longitude],
+        [simulation.coords.lat, simulation.coords.lon]
+      ], {
+        color: 'red',
+        dashArray: '10, 10',
+        weight: 2,
+        opacity: 0.8
+      }).addTo(scanLayerRef.current!);
+
+      // Fly to view
+      map.flyTo([selectedAircraft.latitude, selectedAircraft.longitude], 7);
+    }
+
+    if (simulation.state === 'impact' && simulation.coords) {
+      // Impact Marker
+      L.circleMarker([simulation.coords.lat, simulation.coords.lon], {
+        radius: 10,
+        color: 'red',
+        fillColor: '#ff0000',
+        fillOpacity: 0.8,
+        className: 'animate-ping'
+      }).addTo(scanLayerRef.current!);
+    }
+
+    if (simulation.state === 'scanning' && simulation.coords) {
+      // Radar Waves
+      const waves = [10000, 30000, 60000];
+      waves.forEach((r, i) => {
+        L.circle([simulation.coords!.lat, simulation.coords!.lon], {
+          radius: r,
+          color: '#3b82f6', // Blue
+          weight: 1,
+          fill: false,
+          className: `animate-pulse-slow`
+        }).addTo(scanLayerRef.current!);
+      });
+    }
+
+    if (simulation.state === 'detected' && simulation.coords) {
+      // Spawn debris particles
+      if (driftParticlesRef.current) {
+        for (let i = 0; i < 30; i++) {
+          const startLat = simulation.coords.lat + (Math.random() - 0.5) * 0.5;
+          const startLon = simulation.coords.lon + (Math.random() - 0.5) * 0.5;
+          L.circleMarker([startLat, startLon], {
+            radius: 2,
+            color: '#00ff00', // Green for found
+            fillColor: '#00ff00',
+            fillOpacity: 1
+          }).addTo(driftParticlesRef.current!);
+        }
+      }
+
+      // Popup
+      L.popup()
+        .setLatLng([simulation.coords.lat, simulation.coords.lon])
+        .setContent('<div class="text-black font-bold">✅ Debris Detected<br/>Confidence: 94%</div>')
+        .openOn(map);
+    }
+
+  }, [simulation, selectedAircraft]);
+
+  // Render Ships
+  useEffect(() => {
+    if (!shipLayerRef.current) return;
+    shipLayerRef.current.clearLayers();
+
+    if (ships && ships.length > 0) {
+      ships.forEach((ship, index) => {
+        const isSimulationActive = simulation && simulation.state !== 'idle' && simulation.coords;
+        const isNearest = isSimulationActive && index === 0; // Assumes sorted by distance
+        const color = isNearest ? '#00ff00' : '#0099ff';
+
+        const shipIcon = L.divIcon({
+          className: '',
+          html: `<div style="font-size: 20px; filter: drop-shadow(0 0 5px ${color});">🚢</div>`,
+          iconSize: [24, 24],
+          iconAnchor: [12, 12]
+        });
+
+        const marker = L.marker([ship.lat, ship.lon], { icon: shipIcon })
+          .bindPopup(`
+            <div style="font-family: monospace; min-width: 180px;">
+              <h3 style="margin: 0; color: ${color}; font-weight: bold;">${ship.name}</h3>
+              <div style="font-size: 11px; margin-top: 4px; color: #aaa;">${ship.type}</div>
+              <hr style="border: 0; border-top: 1px solid #444; margin: 6px 0;" />
+              <div><b>Distance:</b> ${ship.distance_km} km</div>
+              <div><b>MMSI:</b> ${ship.mmsi}</div>
+              <div><b>Callsign:</b> ${ship.callsign}</div>
+              <div style="margin-top: 8px; font-size: 10px; color: ${color}; border: 1px solid ${color}; padding: 2px 4px; display: inline-block;">
+                ${ship.contact}
+              </div>
+            </div>
+          `, {
+            className: 'flight-tooltip-custom', // Reuse existing style
+            closeButton: false
+          });
+
+        marker.addTo(shipLayerRef.current!);
+
+        if (isNearest && simulation && simulation.coords) {
+          marker.openPopup();
+          // Draw Rescue Vector
+          L.polyline([
+            [ship.lat, ship.lon],
+            [simulation.coords.lat, simulation.coords.lon]
+          ], {
+            color: '#00ff00',
+            dashArray: '5, 10',
+            weight: 2,
+            opacity: 0.8
+          }).addTo(shipLayerRef.current!).bindTooltip("Rescue Vector", { permanent: true, direction: "center", className: "bg-transparent border-0 text-green-500 font-mono text-[10px]" });
+        }
+      });
+    }
+  }, [ships, simulation]);
 
   // Update Flight Paths
   useEffect(() => {
@@ -340,69 +595,69 @@ export default function FlightMap({
           .addTo(selectionLayerRef.current);
       }
     }
-  }, [selectedAircraft]);
+  }, [selectedAircraft, locateTrigger]);
 
   return (
     <>
       <style>{`
-      .flight - tooltip - custom {
-      background: hsl(220 18 % 6 % / 0.95)!important;
-      border: 1px solid hsl(215 20 % 18 %)!important;
-      color: hsl(200 20 % 92 %)!important;
-      border - radius: 10px!important;
+      .flight-tooltip-custom {
+      background: hsl(220 18% 6% / 0.95)!important;
+      border: 1px solid hsl(215 20% 18%)!important;
+      color: hsl(200 20% 92%)!important;
+      border-radius: 10px!important;
       padding: 0!important;
-      box - shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 0 1px hsl(215 20 % 14 %)!important;
-      backdrop - filter: blur(12px)!important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 0 1px hsl(215 20% 14%)!important;
+      backdrop-filter: blur(12px)!important;
     }
-        .flight - tooltip - custom::before {
-      border - top - color: hsl(215 20 % 18 %)!important;
+        .flight-tooltip-custom::before {
+      border-top-color: hsl(215 20% 18%)!important;
     }
-        .flight - tt {
-      font - family: 'Share Tech Mono', monospace;
-      font - size: 11px;
+        .flight-tt {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
       padding: 8px 10px;
-      min - width: 120px;
+      min-width: 120px;
     }
-        .flight - tt - header {
-      font - family: 'Orbitron', sans - serif;
-      font - weight: 700;
-      font - size: 11px;
-      letter - spacing: 0.05em;
-      margin - bottom: 6px;
-      color: hsl(190 100 % 50 %);
+        .flight-tt-header {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+      color: hsl(190 100% 50%);
     }
-        .flight - tt - row {
+        .flight-tt-row {
       display: flex;
-      justify - content: space - between;
+      justify-content: space-between;
       gap: 12px;
       padding: 1px 0;
     }
-        .flight - tt - row span: first - child {
-      color: hsl(215 15 % 45 %);
-      text - transform: uppercase;
-      font - size: 10px;
-      letter - spacing: 0.05em;
+        .flight-tt-row span:first-child {
+      color: hsl(215 15% 45%);
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 0.05em;
     }
-        .flight - tt - row span: last - child {
-      color: hsl(200 20 % 85 %);
-      font - weight: 600;
+        .flight-tt-row span:last-child {
+      color: hsl(200 20% 85%);
+      font-weight: 600;
     }
-        .leaflet - control - zoom a {
-      background: hsl(220 18 % 7 %)!important;
-      color: hsl(190 100 % 50 %)!important;
-      border - color: hsl(215 20 % 16 %)!important;
-      font - weight: 300!important;
+        .leaflet-control-zoom a {
+      background: hsl(220 18% 7%)!important;
+      color: hsl(190 100% 50%)!important;
+      border-color: hsl(215 20% 16%)!important;
+      font-weight: 300!important;
       transition: all 0.2s!important;
     }
-        .leaflet - control - zoom a:hover {
-      background: hsl(220 18 % 10 %)!important;
-      box - shadow: 0 0 12px hsl(190 100 % 50 % / 0.15)!important;
+        .leaflet-control-zoom a:hover {
+      background: hsl(220 18% 10%)!important;
+      box-shadow: 0 0 12px hsl(190 100% 50% / 0.15)!important;
     }
-        .leaflet - control - zoom {
+        .leaflet-control-zoom {
       border: none!important;
-      border - radius: 10px!important;
+      border-radius: 10px!important;
       overflow: hidden!important;
-      box - shadow: 0 4px 20px rgba(0, 0, 0, 0.4)!important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4)!important;
     }
     `}</style>
       <div ref={containerRef} className="w-full h-full" />
