@@ -1,0 +1,1806 @@
+[
+  {
+    "name": "Cleveland, Ohio",
+    "lat": 41.4993,
+    "lon": -81.6944,
+    "count": 7,
+    "totalFatalities": 26,
+    "crashes": [
+      {
+        "date": "05/25/1919",
+        "operator": "US Aerial Mail Service",
+        "fatalities": "1",
+        "summary": "Caught fire in midair. The pilot leaped from the plane to his death as the plane began to go into a dive."
+      },
+      {
+        "date": "06/06/1920",
+        "operator": "US Aerial Mail Service",
+        "fatalities": "1",
+        "summary": ""
+      },
+      {
+        "date": "04/29/1921",
+        "operator": "US Aerial Mail Service",
+        "fatalities": "1",
+        "summary": ""
+      },
+      {
+        "date": "05/24/1938",
+        "operator": "United Air Lines",
+        "fatalities": "10",
+        "summary": "An uncontrollable fire developed in the right engine and the pilot decided to make an emergency landing rather than try to reach Cleveland Airport. The plane struck trees in level flight 8.5 miles east of Cleveland Airport. A fire in the right engine accessory section which resulted from the failure of a cylinder barrel and was fed from the right engine oil supply."
+      },
+      {
+        "date": "11/11/1946",
+        "operator": "United Air Lines",
+        "fatalities": "2",
+        "summary": "Struck power lines and trees and crashed 500 feet short of the runway. The error of the pilot in establishing an approach toward an area not cleared for landing as a result of having mistaken the end markers of Runway 23 for those of Runway 31. A contributing factor was the failure of the pilot to abandon his attempt to land at Cleveland Airport when confronted with weather conditions below the minimums prescribed for that airport."
+      },
+      {
+        "date": "01/28/1970",
+        "operator": "TAG Airlines",
+        "fatalities": "9",
+        "summary": "The aircraft suffered an airframe failure while en route. Fatigue fracture of wing attachment fitting bolts. FAA replacement time exceeded."
+      },
+      {
+        "date": "02/17/1991",
+        "operator": "Ryan International Airlines",
+        "fatalities": "2",
+        "summary": "The cargo plane stalled during takeoff cart wheeled and crashed. The failure of the flight crew to detect and remove ice contamination on the airplane's wings, which was largely a result of a lack of appropriate response by the Federal Aviation Administration, Douglas Aircraft Company, and Ryan International Airlines to the known effect that a minute amount of contamination has on the stall characteristics of the DC-9 series 10 airplane. The ice contamination led to wing stall and loss of control during the attempted takeoff."
+      }
+    ],
+    "causes": {
+      "Fire": 2,
+      "Engine Failure": 1,
+      "Stall": 1
+    },
+    "primaryRisk": "Fire",
+    "riskIntensity": 0.4666666666666667,
+    "description": "High risk zone with 7 recorded incidents. Primary factor: Fire."
+  },
+  {
+    "name": "Paris, France",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "count": 10,
+    "totalFatalities": 77,
+    "crashes": [
+      {
+        "date": "09/06/1921",
+        "operator": "Franco-Roumaine",
+        "fatalities": "5",
+        "summary": "Crashed while making an approach to Le Bourget Airport in Paris."
+      },
+      {
+        "date": "01/14/1922",
+        "operator": "Handley Page Transport",
+        "fatalities": "5",
+        "summary": "Crashed at Le Bourget field."
+      },
+      {
+        "date": "12/31/1927",
+        "operator": "Latecoere Airlines",
+        "fatalities": "4",
+        "summary": ""
+      },
+      {
+        "date": "01/22/1928",
+        "operator": "Aeropostale",
+        "fatalities": "1",
+        "summary": ""
+      },
+      {
+        "date": "01/07/1939",
+        "operator": "Swissair",
+        "fatalities": "5",
+        "summary": "The aircraft crashed while attempting to land."
+      },
+      {
+        "date": "01/06/1948",
+        "operator": "Air France",
+        "fatalities": "16",
+        "summary": "Crashed into trees a few hundred yards away from the runway while attempting to land at Le Bourget Airport."
+      },
+      {
+        "date": "11/24/1956",
+        "operator": "Linee Aeree Italiane",
+        "fatalities": "34",
+        "summary": "Lost altitude on takeoff and crashed into a house. Failed to climb for reasons unknown. The aircraft's slight loss of altitude soon after take off was the main cause of the accident. There is no explanation for this loss of altitude. Orchestra and opera conductor Guido Cantelli, 36, among those killed."
+      },
+      {
+        "date": "01/29/1957",
+        "operator": "Air France",
+        "fatalities": "2",
+        "summary": "A first ILS attempt to land at Orly Airport failed. The crew decided to try a second time with GCA guidance. Full power was applied when the crew was not able to see the runway. The aircraft continued to descend impacting the ground in a right bank. The right wing separated and the main fuselage broke-up into four parts. Stalling, as a result of delayed application of power in a final approach configuration and inadequate control of heading, airspeed and altitude after the visual was lost."
+      },
+      {
+        "date": "01/06/1993",
+        "operator": "Lufthansa Cityline",
+        "fatalities": "4",
+        "summary": "While approaching Charles de Gaulle Airport,  a preceding Korean Air, Boeing 747 blew a tire on landing and the runway was closed. The crew had to use another runway but the aircraft entered a high sink rate and flew into the ground 5,500 feet short of the runway."
+      },
+      {
+        "date": "05/25/2000",
+        "operator": "Streamline",
+        "fatalities": "1",
+        "summary": "Midair collision with a MD-83 after taxing on the runway."
+      }
+    ],
+    "causes": {
+      "Stall": 1
+    },
+    "primaryRisk": "Stall",
+    "riskIntensity": 0.6666666666666666,
+    "description": "High risk zone with 10 recorded incidents. Primary factor: Stall."
+  },
+  {
+    "name": "Bucharest, Romania",
+    "lat": 44.4268,
+    "lon": 26.1025,
+    "count": 7,
+    "totalFatalities": 68,
+    "crashes": [
+      {
+        "date": "08/27/1923",
+        "operator": "Campagnie France Roumaine",
+        "fatalities": "2",
+        "summary": ""
+      },
+      {
+        "date": "08/18/1938",
+        "operator": "LOT Polish Airlines",
+        "fatalities": "7",
+        "summary": "Caught fire after a ground looping."
+      },
+      {
+        "date": "06/19/1941",
+        "operator": "LARES",
+        "fatalities": "15",
+        "summary": "Crashed during takeoff."
+      },
+      {
+        "date": "08/13/1947",
+        "operator": "Transporturile Aeriene Romano-Sovietice",
+        "fatalities": "3",
+        "summary": ""
+      },
+      {
+        "date": "09/22/1977",
+        "operator": "Malev Hungarian Airlines",
+        "fatalities": "29",
+        "summary": "Crashed short of the runway. The aircraft was being flown at reduced power and went unnoticed by the crew until it struck the ground in level flight.."
+      },
+      {
+        "date": "02/09/1989",
+        "operator": "Tarom",
+        "fatalities": "5",
+        "summary": "Crashed after experiencing engine failure on takeoff."
+      },
+      {
+        "date": "09/14/1999",
+        "operator": "Greek Government",
+        "fatalities": "7",
+        "summary": "Experienced pitch oscillations during descent and crashed while landing. Inadequate risk assessment of the pitch feel malfunctions. Overriding of the A/P on the pitch channel by the crew."
+      }
+    ],
+    "causes": {
+      "Fire": 1,
+      "Engine Failure": 1
+    },
+    "primaryRisk": "Fire",
+    "riskIntensity": 0.4666666666666667,
+    "description": "High risk zone with 7 recorded incidents. Primary factor: Fire."
+  },
+  {
+    "name": "Moscow, Russia",
+    "lat": 55.7558,
+    "lon": 37.6173,
+    "count": 25,
+    "totalFatalities": 798,
+    "crashes": [
+      {
+        "date": "11/18/1923",
+        "operator": "CCCP",
+        "fatalities": "2",
+        "summary": ""
+      },
+      {
+        "date": "05/18/1935",
+        "operator": "Gor'ky Eskadril'ya",
+        "fatalities": "50",
+        "summary": "Midair collision with an I-5 fighter at 2,300 ft. The fighter was performing aerobatics trying to loop around the Tupolev. The plane crashed into a residental neighborhood and was on its maiden flight. The plane was nicknamed 'Maxim Gorky.'  Pilot error. Forty-nine killed on the Tupolev, one on the I-5"
+      },
+      {
+        "date": "03/26/1952",
+        "operator": "Aeroflot",
+        "fatalities": "70",
+        "summary": "The plane overshot the runway and collided with a military aircraft killing at least 70 people."
+      },
+      {
+        "date": "12/29/1954",
+        "operator": "Aeroflot",
+        "fatalities": "45",
+        "summary": ""
+      },
+      {
+        "date": "06/14/1957",
+        "operator": "LOT Polish Airlines",
+        "fatalities": "9",
+        "summary": "The aircraft descended below safe altitude and struck the ground in rain and poor visibility. The crew's application of an approach procedure other than that prescribed by the airport authority."
+      },
+      {
+        "date": "09/26/1960",
+        "operator": "Austrian Airlines",
+        "fatalities": "31",
+        "summary": "Crashed on approach to Moscow, 11 nm short of the runway. Malfunctioning or misread altimeter."
+      },
+      {
+        "date": "10/25/1962",
+        "operator": "Aeroflot",
+        "fatalities": "10",
+        "summary": "Crashed on takeoff on a test flight. Rudder controls improperly installed."
+      },
+      {
+        "date": "12/02/1966",
+        "operator": "Aeroflot",
+        "fatalities": "21",
+        "summary": "Crashed into a snowbank on the takeoff roll in poor visibility."
+      },
+      {
+        "date": "03/27/1968",
+        "operator": "Military - Russian Air Force",
+        "fatalities": "2",
+        "summary": "Soviet cosmonaut Yuri Gagarin, 34, the first man in space, was killed along with his instructor, when the military fighter they were training in crashed approximately 30 miles east of Moscow."
+      },
+      {
+        "date": "04/22/1968",
+        "operator": "Aeroflot",
+        "fatalities": "5",
+        "summary": "Struck power lines while landing."
+      },
+      {
+        "date": "08/26/1969",
+        "operator": "Aeroflot",
+        "fatalities": "16",
+        "summary": "Engine fire led to an emergency landing with the landing gear retracted."
+      },
+      {
+        "date": "10/13/1971",
+        "operator": "Aeroflot",
+        "fatalities": "20",
+        "summary": "Crashed on takeoff"
+      },
+      {
+        "date": "11/28/1972",
+        "operator": "Japan Air Lines",
+        "fatalities": "62",
+        "summary": "The aircraft lost altitude while taking off and crashed. The copilot responded to the captain's 'gear-up' command by reaching forward and pulling back on the ground spoiler handle, rather than lifting the gear handle which was immediately ahead of the spoiler control. Late night partying by the crew was suspected the night before."
+      },
+      {
+        "date": "03/03/1973",
+        "operator": "Balkan Bulgarian Airlines",
+        "fatalities": "25",
+        "summary": "Crashed, broke up and burst in flames while on second approach after descending below glide slope. Icing of tailplane."
+      },
+      {
+        "date": "12/07/1973",
+        "operator": "Aeroflot",
+        "fatalities": "13",
+        "summary": "The aircraft crashed after the wing touched the ground while landing short of the runway."
+      },
+      {
+        "date": "01/03/1975",
+        "operator": "Aeroflot",
+        "fatalities": "61",
+        "summary": "Crashed shortly after taking off."
+      },
+      {
+        "date": "01/03/1976",
+        "operator": "Aeroflot",
+        "fatalities": "61",
+        "summary": "The plane rolled to the left and crashed into houses after takeoff. Failure of both artificial horizons."
+      },
+      {
+        "date": "11/28/1976",
+        "operator": "Aeroflot",
+        "fatalities": "72",
+        "summary": "The plane crashed during takeoff in poor weather conditions."
+      },
+      {
+        "date": "03/17/1979",
+        "operator": "Aeroflot",
+        "fatalities": "86",
+        "summary": "The aircarft crashed in freezing rain and fog shortly after taking off. The aircraft was overloaded. The pilot had very little experience flying aircraft type."
+      },
+      {
+        "date": "07/06/1982",
+        "operator": "Aeroflot",
+        "fatalities": "90",
+        "summary": "The aircraft crashed and burned in field shortly after takeoff. Failure of the aircraft's power plant fire warning system due to design deficiencies which resulted in false fire indications in both engines."
+      },
+      {
+        "date": "12/05/1999",
+        "operator": "Tashkent Aircraft Production Corporation",
+        "fatalities": "5",
+        "summary": "The cargo plane was taxiing for takeoff when a gust of wind caused the rudder to become fully defected to the left. The captain continued the takeoff despite suggestions from the crew to return to the gate. Shortly after lifting off the runway the plane yawed to the left and collided with the airport perimeter wall, bursting into flames."
+      },
+      {
+        "date": "03/09/2000",
+        "operator": "Vologodskiye Airlines",
+        "fatalities": "9",
+        "summary": "The aircraft climbed to an altitude of about 100 ft., stalled, lost control and crashed. Ice build up on the wings. Flaps incorrectly set."
+      },
+      {
+        "date": "07/14/2001",
+        "operator": "Russ Air Transport Company",
+        "fatalities": "10",
+        "summary": "The cargo plane was taking off from Chkalovsky Airport with a load of construction material and cosmetics. After reaching a height of 150 feet, the plane the crashed and burned 1,600 feet past the end of the runway.  The plane was overloaded by 15 tones."
+      },
+      {
+        "date": "07/28/2002",
+        "operator": "Pulkovo Aviation Enterprise",
+        "fatalities": "14",
+        "summary": "A Russian passenger airliner on a training flight crashed shortly after takeoff from Moscow's Sheremetyevo Airport. After reaching an altitude of about 600 ft., the plane banked hard left, hit the ground and exploded. Sixteen of 18 crewmembers aboard were killed. Two flight attendants survived. Investigation revealed that the stabilizer spontaneously shifted to the full down position two seconds after takeoff. Six seconds after the shift, the captain tried to compensate by thrusting the control stick forward as far as possible, but was unable to regain control of the aircraft."
+      },
+      {
+        "date": "07/29/2007",
+        "operator": "Atran",
+        "fatalities": "9",
+        "summary": "The cargo plane, carrying 9 tons of cargo, crashed 4 km from the runway as it was attempting to take off from Domodedovo airport. The aircraft slammed into a field shattering debris over a wide area."
+      }
+    ],
+    "causes": {
+      "Severe Weather": 5,
+      "Stall": 2,
+      "Engine Failure": 2,
+      "Fire": 2,
+      "Fog": 1
+    },
+    "primaryRisk": "Severe Weather",
+    "riskIntensity": 1,
+    "description": "High risk zone with 25 recorded incidents. Primary factor: Severe Weather."
+  },
+  {
+    "name": "New York, New York",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "count": 20,
+    "totalFatalities": 425,
+    "crashes": [
+      {
+        "date": "09/26/1926",
+        "operator": "",
+        "fatalities": "2",
+        "summary": "Too much weight caused the landing gear to collapse as the plane took off for Paris on the first trans-Atlantipassenger flight."
+      },
+      {
+        "date": "07/28/1945",
+        "operator": "Military - U.S. Army Air Forces",
+        "fatalities": "3",
+        "summary": "A U.S. Army Air Force plane crashed into the 79th floor of the Empire State Building in heavy fog.  Lt. Col. William Franklin Smith Jr., the pilot, became disoriented while trying to land at Newark Airport.  Lt. Smith was told he had a 3 hour wait to land at Newark. Impatient to get his plane on the ground, he falsely declared he had official business at La Guardia Airport with the intention of diverting to Newark as soon as he was cleared. The 12 ton plane smashed a 20 ft. hole in the building. Fuel from the ruptured gas tanks poured out and set two floors ablaze killing 10 people. One engine exited the south side of the building and plunged into a penthouse below.  The second engine entered an elevator shaft and severed the cables plunging the car and the elevator operator 1,000 feet into a sub basement. Despite suffering a broken back and legs, she survived."
+      },
+      {
+        "date": "08/08/1947",
+        "operator": "American Airlines",
+        "fatalities": "3",
+        "summary": "Cargo flight. Lost an engine on takeoff and decided to return to the airport. Following an attempted landing, a miss approach procedure was attempted for a second landing without sufficient air speed for single engine operation."
+      },
+      {
+        "date": "04/05/1952",
+        "operator": "US Airlines",
+        "fatalities": "2",
+        "summary": "Violent engine surges and turbulence during a missed ILS approach caused the crew to loose control of the aircraft and crash at 171st St. and 89th Ave. in Queens. The no.1 engine fuel feed valve diaphragm  failed due to deterioration."
+      },
+      {
+        "date": "12/18/1954",
+        "operator": "Linee Aeree Italiane",
+        "fatalities": "26",
+        "summary": "The plane crashed into approach lights of the runway during the fourth landing attempt at Idlewild Airport, sinking into Jamaica  Bay. An erratiapproach which resulted in a descent to an altitude too low to avoid striking the pier. A contributing factor was pilot fatigue due to the particular and difficult circumstances including two and one-half hours in a holding pattern."
+      },
+      {
+        "date": "02/01/1957",
+        "operator": "Northeast Airlines",
+        "fatalities": "21",
+        "summary": "Shortly after lifting off from La Guardia Airport in a snowstorm, the plane rolled sharply to the left and crashed on Rikers Island. The failure of the captain to properly observe and interpret his flight instruments and maintain control of his aircraft. Several inmates from the Rikers Island Prison made some heroirescues and were later pardoned."
+      },
+      {
+        "date": "01/19/1961",
+        "operator": "Aeronaves de Mexico",
+        "fatalities": "4",
+        "summary": "An aborted takeoff caused the aircraft to crash through the airport barrier fence and burst into flames. The unnecessary discontinuance of the takeoff as a result of actions by the check-pilot who was either not in the pilot's seat or reached forward without warning and pulling the throttles back. This action caused power to be decreased on all four engines. Contributing factors were the marginally poor weather, snow on the runway and the possibility of the pitot head heat not being on."
+      },
+      {
+        "date": "03/01/1962",
+        "operator": "American Airlines",
+        "fatalities": "95",
+        "summary": "After taking off from Idlewild Airport and reaching a height of 1,500 feet, the aircraft made a left turn but continued to roll until it was inverted and crashed into Jamaica Bay approximately 3 miles southwest of the control tower. A rudder control malfunction which caused  a full unwanted rudder deployment, yaw, sideslip and roll which led to loss of control of the aircraft. This was caused by the use of an improper tool at the manufacturing plant to wrap the rudder servo unit's wiring, damaging the wires and leading to a short circuit. There is speculation that the accident was actually caused by the captain putting the aircraft in a steep 45 degree bank which resulted in the loss of control of the aircraft."
+      },
+      {
+        "date": "11/30/1962",
+        "operator": "Eastern Air Lines",
+        "fatalities": "25",
+        "summary": "The aircraft was 1,000 ft past the ILS touchdown point and at an altitude of 25 ft. when a loss of visual reference caused the crew to abandon their approach. The landing gear was retracted, 20 degrees flaps selected and climb power applied.  At 3,500 ft. from the threshold, in a 6 degree left bank and speed of 135 knots the No. 1 and 2 propellers struck the ground. The aircraft hit a mound of earth and broke up. Crew failed to follow approved procedures. Technique employed by the crew during abandonment of the approach under fog conditions that were not adequately reported."
+      },
+      {
+        "date": "02/08/1965",
+        "operator": "Eastern Air Lines",
+        "fatalities": "84",
+        "summary": "The aircraft crashed shortly after taking off after taking evasive action to avoid  Pan American Flight 212, a  Boeing-707, that was planning to land. The aircraft were separated vertically by approximately 1,000 feet although this was not known to the  controllers involved. The EAL captain had the illusion that a potential collision course existed. As a result of this illusion, a descent was initiated. In this circumstance the DC-7 was placed in an unusual attitude, resulting in spatial disorientation of the crew. Placement of the two aircraft on a near head on course which prompted the EAL plane to make an evasive maneuver from which the pilots could not recover."
+      },
+      {
+        "date": "09/08/1970",
+        "operator": "Trans International Airlines",
+        "fatalities": "11",
+        "summary": "Rejected takeoff. Lost control and crashed. Loss of pitch control caused by the entrapment of a pointed, asphalt-covered object between the leading edge of the right elevator and the right horizontal spar web access door in the aft part of the stabilizer."
+      },
+      {
+        "date": "04/17/1972",
+        "operator": "Helaire Helicopter",
+        "fatalities": "3",
+        "summary": "Float equipped sightseeing helicopter encountered turbulence which led to the blades flapping and a steep nose down crash into the river."
+      },
+      {
+        "date": "06/24/1975",
+        "operator": "Eastern Air Lines",
+        "fatalities": "113",
+        "summary": "The aircraft crashed into the approach lights to runway 22L at JFK while on an ILS approach to the runway. Aircraft's encounter with heavy rain and a very strong thunderstorm that was located astride the ILS localizer course which resulted in a high descent rate into approach light towers.The flightcrew's delayed recognition and correction of the high descent rate and their reliance upon visual cues rather than on flight instrument reference. However, the adverse winds might have been too severe for a successful approach and landing even had they relied upon and responded rapidly to the indications of the flight instruments.Contributing to the accident was the continued use of Runway 22L when it should have become evident to both air trafficontrol personnel and the flightcrew that a severe weather hazard existed along the approach path."
+      },
+      {
+        "date": "05/16/1977",
+        "operator": "New  York Helicopter",
+        "fatalities": "4",
+        "summary": "While passengers were loading aboard the helicopter on top of the Pan Am building, the landing  gear collapsed causing the helicopter to tip on its side.  Four people, waiting to board the craft  were killed by the rotating blades. One of the blades tore loose and struck a window breaking in two. One-half of the blade then sailed two blocks striking and killing a pedestrian. Fatigue failure of the upper right forward fitting of the right main landing gear tube assembly. The fatigue originated from a small surface pit of undetermined source."
+      },
+      {
+        "date": "02/28/1984",
+        "operator": "Scandinavian Airlines (SAS)",
+        "fatalities": "0",
+        "summary": "While attempting to land at JFK, New York, the aircraft touched down 4,700 feet beyond the threshold, slid off end of runway and came to rest in a tidal waterway. The crew's disregard for prescribed procedures for monitoring and controlling of airspeed during the final stages of the approach and decision to continue the landing rather than to execute a missed approach. Overreliance on the autothrottle speed control system which had a history of recent malfunctions."
+      },
+      {
+        "date": "09/20/1989",
+        "operator": "USAir",
+        "fatalities": "2",
+        "summary": "During an aborted takeoff,  the aircraft overran the runway, hit a wooden approach lighting pier and came to rest partially submerged in shallow water in Bowery Bay. The failure of the captain to exercise his authority in a timely manner to reject or continue the troubled takeoff which was initiated by a mistrimmed rudder."
+      },
+      {
+        "date": "03/22/1992",
+        "operator": "USAir",
+        "fatalities": "27",
+        "summary": "The plane was de-iced two times while at the gate. Thirty-five minutes elapsed between the last de-icing and takeoff during which ice accumulated on the wings. After liftoff, the plane stalled, crashed and came to rest inverted and partially submerged in Flushing Bay. Failure of the airline industry and FAA to provide flight crews with procedures compatible with departure delays in conditions conducive to airframe icing and the decision by the flight crew to take off without positive assurance that the airplane's wings were free of ice accumulation after 35 minutes of exposure to precipitation following de-icing. The ice contamination on the wings resulted in an aerodynamistall and loss of control after liftoff."
+      },
+      {
+        "date": "07/30/1992",
+        "operator": "Trans World Airlines",
+        "fatalities": "0",
+        "summary": "Immediately after liftoff, the stick shaker activated. The takeoff was aborted but the aircraft ran off the runway and caught fire. A defective stall warning system. A design flaw that allowed the defective stall warning system to go undetected. Failure of TWA's maintenance program to correct a repetitive malfunction of the stall warning system, and inadequate crew coordination between the captain and first officer that resulted in their inappropriate response to a false stall warning."
+      },
+      {
+        "date": "03/02/1994",
+        "operator": "Continental Airlines",
+        "fatalities": "0",
+        "summary": "The aircraft overran the runway and came to rest at the edge of the east river, after an aborted takeoff. Failure to turn on the pilot/statiheat system resulting in erroneous air speed indication. Though heavily damaged, the plane was repaired and put back into service."
+      },
+      {
+        "date": "01/15/2009",
+        "operator": "US Airways",
+        "fatalities": "0",
+        "summary": "The plane was taking off from La Guardia Airport when possibly, both engines were disabled after striking a flock of geese. The crew was able to ditch the plane in the Hudson River, making a soft landing. All 150 passengers and crew of 5 made it out safely before the plane began to sink. No one was reported to be seriously injured."
+      }
+    ],
+    "causes": {
+      "Fog": 2,
+      "Engine Failure": 5,
+      "Severe Weather": 3,
+      "Stall": 2,
+      "Fire": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 1,
+    "description": "High risk zone with 20 recorded incidents. Primary factor: Engine Failure."
+  },
+  {
+    "name": "Rio de Janeiro, Brazil",
+    "lat": -22.9068,
+    "lon": -43.1729,
+    "count": 20,
+    "totalFatalities": 311,
+    "crashes": [
+      {
+        "date": "03/03/1928",
+        "operator": "",
+        "fatalities": "10",
+        "summary": ""
+      },
+      {
+        "date": "12/04/1928",
+        "operator": "",
+        "fatalities": "6",
+        "summary": "The aircraft's wingtip struck the water and crashed into Rio de Janeiro Bay."
+      },
+      {
+        "date": "01/13/1939",
+        "operator": "Syndicato Condor",
+        "fatalities": "9",
+        "summary": "The seaplane crashed in flames in mountains northeast of Rio de Janeiro."
+      },
+      {
+        "date": "11/09/1940",
+        "operator": "",
+        "fatalities": "18",
+        "summary": "Midair collisioin with a private plane."
+      },
+      {
+        "date": "08/27/1943",
+        "operator": "VASP",
+        "fatalities": "18",
+        "summary": "Struck a Naval Academy building while attemptin to take off.  The plane then broke in two and fell into the harbor. The plane was named 'City of Rio de Janiero.'"
+      },
+      {
+        "date": "12/23/1946",
+        "operator": "FAMA (Argentina)",
+        "fatalities": "21",
+        "summary": "Poor weather at the destination airport forced the crew to divert to Rio de Janeiro. While approaching to land the aircraft flew into a mountain, 14 miles from the airport."
+      },
+      {
+        "date": "06/06/1951",
+        "operator": "Lineas Aéreas Trans. Brasileira",
+        "fatalities": "2",
+        "summary": "Crashed into high ground while on a VFR apporach in IFR conditions. The pilot attempted a descent over an area where the minimum safe altitude was 1,200 ft."
+      },
+      {
+        "date": "07/27/1952",
+        "operator": "Pan American World Airways",
+        "fatalities": "1",
+        "summary": "A woman was suck out of the plane . The flight engineer's failure to recognize an unsafe condition of the cabin door despite three completely separate warnings of that condition and the captain's action in continuing flight while pressurized despite the several warnings that the main cabin door was not properly locked."
+      },
+      {
+        "date": "09/12/1954",
+        "operator": "Cruzeiro",
+        "fatalities": "6",
+        "summary": "The plane was attemping to return to the Rio de Janeiro after severe vibrations in the No. 1 engine made the crew feather the prop.  While on final the aircraft came in too high and a go-around was attempted during which the plane crashed into the sea.   Lack of reference to instruments after opening the throttle to go-around in restricted visibility.  Power may have been inadvertently reduced on the good engine."
+      },
+      {
+        "date": "02/01/1958",
+        "operator": "Loide Aéreo Nacional",
+        "fatalities": "5",
+        "summary": "The plane abandoned the takeoff after an engine failed. The plane was unable to stop and slid off the runway striking rocks and catching fire. Failure of No. 4 engine. Malfunctioning of the starboard brakes."
+      },
+      {
+        "date": "05/31/1958",
+        "operator": "Paraense Transportes Aéreos",
+        "fatalities": "4",
+        "summary": "The cargo plane crashed."
+      },
+      {
+        "date": "12/30/1958",
+        "operator": "VASP",
+        "fatalities": "21",
+        "summary": "Crashed on takeoff after the No.1 engine failed. Pilot error. Pilot's incorrect handling of controls in flight."
+      },
+      {
+        "date": "01/11/1959",
+        "operator": "Lufthansa",
+        "fatalities": "36",
+        "summary": "The plane descended over Guanabara Bay in rain, struck the water with the nosewheel and crashed on Flecheiras Beach, short of the runway. Descent below minima for reasons unknown. Crew fatigue possible."
+      },
+      {
+        "date": "02/26/1960",
+        "operator": "REAL / Military - U.S. Navy",
+        "fatalities": "61",
+        "summary": "Midair collision between a DC-3 and a US Navy R-6D. Improper piloting procedures when flying on authorized instrument flight (US Navy pilot). The pilot of the USN plane disobeyed instructions transmitted by Rio Approach Control. The U.S. Navy disagreed and placed no blame on neither pilot. Twenty six killed on the DC-3, 35 on the R-6D-1. Members of the United States Navy Band among those killed."
+      },
+      {
+        "date": "06/24/1960",
+        "operator": "REAL",
+        "fatalities": "54",
+        "summary": "Crashed into Guanabara Bay during approach. Cause undetermined."
+      },
+      {
+        "date": "04/12/1972",
+        "operator": "VASP",
+        "fatalities": "25",
+        "summary": "Crashed in mountainous terrain,  50 miles north of Rio de Janeiro, while on approach."
+      },
+      {
+        "date": "06/09/1973",
+        "operator": "Varig",
+        "fatalities": "2",
+        "summary": "The cargo plane was making an instrument approach to Runway 14 with the speed brake lever at 45 degrees and inboard spoilers deactivated when it was noted that the spoiler switch cover was open. The captain or copilot then closed the spoiler switch cover and activated the inboard spoiler causing the aircraft to pitch down. The plane descended from a height of about 70 meters and struck approach lights."
+      },
+      {
+        "date": "03/26/1978",
+        "operator": "Aero Clube de Volta Redonda",
+        "fatalities": "4",
+        "summary": "The plane lost engine rotation after takeoff  and the pilot  attempted to return to the airport for an emergency landing. Due to the low altitude, the plane stalled and crashed in Paraiba River, one-half mile from the  runway.  Mechanical failure."
+      },
+      {
+        "date": "08/11/1980",
+        "operator": "Prospec",
+        "fatalities": "3",
+        "summary": "Crashed shortly after taking off."
+      },
+      {
+        "date": "07/05/2003",
+        "operator": "BHS - Brazilian Helicopter Services",
+        "fatalities": "5",
+        "summary": "The helicopter  was landing on the helideck of the ship Toisa Mariner, when the tail rotor collided with the flagpole on the ship. The pilot lost the control and the helicopter crashed into the  sea."
+      }
+    ],
+    "causes": {
+      "Mountainous Terrain": 3,
+      "Engine Failure": 5,
+      "Fire": 1,
+      "Severe Weather": 2,
+      "Stall": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 1,
+    "description": "High risk zone with 20 recorded incidents. Primary factor: Engine Failure."
+  },
+  {
+    "name": "Sao Paulo, Brazil",
+    "lat": -23.5505,
+    "lon": -46.6333,
+    "count": 20,
+    "totalFatalities": 404,
+    "crashes": [
+      {
+        "date": "12/03/1928",
+        "operator": "Syndicato Condor",
+        "fatalities": "14",
+        "summary": "The seaplane took off form the bay and narrowly avoided a collision with another plane and in the process veered sharply and so abruptly that one of the wings was strained beyond its elastilimits. The pilot then lost control of the aircraft and it fell, tail spinning 300 feet into the water where one of the engines exploded on impact. It sunk immediately."
+      },
+      {
+        "date": "10/14/1931",
+        "operator": "Syndicato Condor",
+        "fatalities": "3",
+        "summary": ""
+      },
+      {
+        "date": "05/22/1938",
+        "operator": "Cruzeiro do Sul",
+        "fatalities": "2",
+        "summary": "The mail plane crashed while taking off."
+      },
+      {
+        "date": "08/18/1941",
+        "operator": "Panair do Brasil",
+        "fatalities": "8",
+        "summary": "Crashed in a mountain range while enroute."
+      },
+      {
+        "date": "08/30/1944",
+        "operator": "Panair do Brasil",
+        "fatalities": "16",
+        "summary": "Crashed in fog."
+      },
+      {
+        "date": "01/03/1947",
+        "operator": "Panair do Brasil",
+        "fatalities": "11",
+        "summary": "Crashed into the Solimoes extension of the Amazon river."
+      },
+      {
+        "date": "09/08/1951",
+        "operator": "VASP",
+        "fatalities": "13",
+        "summary": "Crashed into a house shortly after taking off from Congonhas Airport."
+      },
+      {
+        "date": "05/13/1952",
+        "operator": "VASP",
+        "fatalities": "5",
+        "summary": "Crashed while attempting to make an emergency landing after experiencing an engine failure. Failure of the port engine due to accessory drive failure. Failure of the starboard engine due to seizure as a result of deficient maintenance. Error on the part of the crew in lowering the landing gear in emergency conditions."
+      },
+      {
+        "date": "06/17/1953",
+        "operator": "Panair do Brasil",
+        "fatalities": "17",
+        "summary": "Crashed while on final approach to Sao Paulo. Error of judgement by the crew during poor visibility at night."
+      },
+      {
+        "date": "06/04/1954",
+        "operator": "Varig",
+        "fatalities": "3",
+        "summary": "The cargo plane crashed on takeoff. Elevator lock was not removed prior to takeoff."
+      },
+      {
+        "date": "12/19/1955",
+        "operator": "Cruzeiro Do Sud",
+        "fatalities": "26",
+        "summary": "Crashed on takeoff."
+      },
+      {
+        "date": "09/23/1959",
+        "operator": "VASP",
+        "fatalities": "20",
+        "summary": "Crashed a few minutes after taking off from Sao Paulo Airport. Cause undetermined."
+      },
+      {
+        "date": "01/15/1963",
+        "operator": "Cruzeiro",
+        "fatalities": "13",
+        "summary": "The crippled airliner crashed into houses and burst into flames as it was coming in for an emergency landing in steady rain."
+      },
+      {
+        "date": "05/03/1963",
+        "operator": "Cruzeiro",
+        "fatalities": "37",
+        "summary": "The aircraft returned to airport after the No. 2 caught fire. The crew feathered the prop, made a left turn, stalled and crashed into a house. Improper feathering procedure."
+      },
+      {
+        "date": "02/27/1975",
+        "operator": "VASP",
+        "fatalities": "15",
+        "summary": "The plane crashed into houses after taking off and burst into flames. The plane had engine trouble, attempted to return to the airport when it crashed into the houses."
+      },
+      {
+        "date": "01/28/1986",
+        "operator": "VASP",
+        "fatalities": "1",
+        "summary": "The crew accidently tried to take off from a taxiway. The takeoff was aborted but the aircraft overran the runway and collided with a embankment and broke in two. There was heavy fog in the area."
+      },
+      {
+        "date": "03/02/1996",
+        "operator": "Madrid Taxi Aéreo - Charter",
+        "fatalities": "9",
+        "summary": "The crew was advised they were too high and fast while on approach to Sao Paulo. The pilot initiated a visual go-around but collided with a mountain at 3,280 ft.  Brazilian pop group Mamanas Assassinas killed."
+      },
+      {
+        "date": "09/14/2002",
+        "operator": "Total  Air Lines",
+        "fatalities": "2",
+        "summary": "One hour after the takeoff , the the plane  disappeared of  Curitiba  ATC. The wreckage was found on a farm, around a crater. Unknown cause."
+      },
+      {
+        "date": "07/17/2007",
+        "operator": "TAM (Brazil)",
+        "fatalities": "187",
+        "summary": "The jet airliner crashed while attempting to land in heavy rain at Congonhas airport. The plane skidded off the end of the runway across a major roadway and struck a gas station and building, bursting into flames. One hundred seventy passengers and a crew of six were aboard."
+      },
+      {
+        "date": "11/04/2007",
+        "operator": "Reali Taxi Aereo",
+        "fatalities": "2",
+        "summary": "The executive jet took off, banked to the right and crashed to the ground striking two houses. The copilot failed to complete the checklist and filled only the right wing fuel tank. By the time they took off it was too late to fix the imbalance with the balancing pump to distriblue fuel evenly in both wings. The plane banked to the right until it stalled and crashed."
+      }
+    ],
+    "causes": {
+      "Engine Failure": 3,
+      "Severe Weather": 3,
+      "Mountainous Terrain": 2,
+      "Fog": 2,
+      "Stall": 2,
+      "Fire": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 1,
+    "description": "High risk zone with 20 recorded incidents. Primary factor: Engine Failure."
+  },
+  {
+    "name": "Burbank, California",
+    "lat": 34.1808,
+    "lon": -118.3089,
+    "count": 7,
+    "totalFatalities": 41,
+    "crashes": [
+      {
+        "date": "05/05/1931",
+        "operator": "PacifiAir Transport",
+        "fatalities": "2",
+        "summary": "The mail plane crashed into Las Tunas Canyon while attempting to land at  Burbank Airport in dense fog."
+      },
+      {
+        "date": "05/16/1932",
+        "operator": "PacifiAir Transport",
+        "fatalities": "3",
+        "summary": "Crashed and burned  in fog while attempting to land at Burbank Airport. Both pilots and the radio man were killed."
+      },
+      {
+        "date": "06/23/1934",
+        "operator": "Aerevias Centrales Air Service",
+        "fatalities": "1",
+        "summary": "Crashed while en route to pick up passengers. The plane crashed near a fire station in heavy fog and burst into flames killing the pilot."
+      },
+      {
+        "date": "09/01/1935",
+        "operator": "Western Air Express",
+        "fatalities": "3",
+        "summary": "Lost altitude and hit power lines after developing engine trouble after taking off."
+      },
+      {
+        "date": "01/10/1945",
+        "operator": "American Airlines",
+        "fatalities": "24",
+        "summary": "The aircraft, lost in fog, crashed into the Verdugo Mountains,  while attempting to reach Palmdale Airport, its alternate landing site, after being unable to land at Burbank Airport. The company ground personnel failed to obtain and transmit important weather to the pilot. Improperly executed missed approach by the pilot. Actress Donna Reed was returning from Juarez where she obtained a divorce from her husband but was bumped from the flight just prior to takeoff  to make room for a military officer holding a wartime-travel priority pass."
+      },
+      {
+        "date": "09/08/1955",
+        "operator": "Currey Air Transport",
+        "fatalities": "3",
+        "summary": "The plane returned after failure of the No. 2 engine, stalled and crashed 200 yards short of the runway  into parked aircraft and a hanger.  The captain's commitment to a landing without radio or visual confirmation of his runway alignment following engine failure immediately after takeoff."
+      },
+      {
+        "date": "12/14/1962",
+        "operator": "Flying Tiger Line",
+        "fatalities": "5",
+        "summary": "The aircraft crashed during an ILS approach to Burbank Airport. Incapacitation of the captain with a heart attack at a critical point in the approach from which the co-pilot could not recover."
+      }
+    ],
+    "causes": {
+      "Fog": 4,
+      "Fire": 1,
+      "Engine Failure": 2,
+      "Mountainous Terrain": 1,
+      "Stall": 1
+    },
+    "primaryRisk": "Fog",
+    "riskIntensity": 0.4666666666666667,
+    "description": "High risk zone with 7 recorded incidents. Primary factor: Fog."
+  },
+  {
+    "name": "Chicago, Illinois",
+    "lat": 41.8781,
+    "lon": -87.6298,
+    "count": 13,
+    "totalFatalities": 156,
+    "crashes": [
+      {
+        "date": "07/12/1931",
+        "operator": "Braniff Airlines",
+        "fatalities": "2",
+        "summary": "Engine quit while taking off. The plane crashed from a height of 700 feet. The pilot tried to return to the airport  by banking to the right but did not have sufficient altitude to recover."
+      },
+      {
+        "date": "09/14/1931",
+        "operator": "Chicago-Detroit Airways",
+        "fatalities": "1",
+        "summary": "Crashed in a severe rainstorm while attempting to land."
+      },
+      {
+        "date": "12/04/1940",
+        "operator": "United Air Lines",
+        "fatalities": "10",
+        "summary": "The aircraft crashed while attempting to land at Chicago. The failure of the pilot to exercise that degree of caution and skill required to avert a stall while approaching for a landing on the short northwest runway. A substantial contributing factor to the accident was the error in judgment of the pilot in choosing that short runway for his landing. An accumulation of ice on the wings may have increased the stalling speed of the plane."
+      },
+      {
+        "date": "03/10/1948",
+        "operator": "Delta Air Lines",
+        "fatalities": "12",
+        "summary": "During takeoff, the aircraft went into a near vertical climb to an altitude of 500 - 800 feet, stalled and crashed.  Loss of longitudinal control of the airplane for reasons undetermined."
+      },
+      {
+        "date": "07/17/1955",
+        "operator": "Braniff Airlines",
+        "fatalities": "22",
+        "summary": "While on instrument approach, the aircraft hit a sign and crashed through the airport boundry fence.  Momentary disorientation caused by the loss of visual reference during the final visual phase of the approach resulting in an increased rate of descent at an altitude too low to effect recovery."
+      },
+      {
+        "date": "11/24/1959",
+        "operator": "Trans World Airlines",
+        "fatalities": "3",
+        "summary": "Shortly after taking off the plane experienced a fire warning in the No. 2 engine, shut it down and attempted to return to Midway Airport. During the final approach the aircraft banked in excess of 45 degrees and developed an excessive sink rate. When the aircraft reached the tops of trees its wings were nearly level and its nose was raised in a climbing attitude but the descent continued and the plane crashed one quarter of a mile southeast of the airport. The accident was the consequence of manuvering the aircraft during the turn to final approach in such a manner as to cause a rate of sink from which recovery was not possible. Sometime during the turn the flaps were retracted from 60% to 24% causing a loss of lift."
+      },
+      {
+        "date": "09/17/1961",
+        "operator": "Northwest Orient Airlines",
+        "fatalities": "37",
+        "summary": "Takeoff and Initial climb appeared to be normal, but at approximately 200 feet a shallow turn to the right continued into a gradually increasing bank of about 85 to 90 degrees. While in the turn, the crew made a short, garbled transmission indicating alarm. During the latter part of the turn a gradual descent began and, two minutes after taking off, the aircraft struck the ground. Mechanical failure in the aileron primary control system due to an improper replacement of the aileron boost assembly, resulting in a loss of lateral control of the aircraft at an altitude too low to effect recovery."
+      },
+      {
+        "date": "08/16/1965",
+        "operator": "United Air Lines",
+        "fatalities": "30",
+        "summary": "The plane crashed into Lake Michigan 19.5 miles east of Lake Forest, Illinois during  an approach and while descending from FL 350. The aircraft made a continuous descent at an average rate of approximately 2,000 feet per minute from 35,000 feet to impact with the water in a clean flight configuration. Officially, a cause could not be determined. The aircraft was dispatched illegally without an operating CVR. Possible misread altimeter. The crew could have read the altimeter as 16,000 instead of  6,000 ft. and continued a descent below what they were cleared for. Possible excessive sink rate. Excessive sink rate is thought to have possibly caused four 727 accidents in succession. Lake Michigan 8/16/65, Cincinnati 11/8/65, Salt Lake City 11/11/65 and Tokyo Bay 2/4/66. Only the Salt Lake and Cincinnati crashes were officially attributed to it. After 727 training manuals were modified and pilots were reoriented to the flying characteristics of the aircraft the problem was corrected."
+      },
+      {
+        "date": "12/27/1968",
+        "operator": "North Central Airlines",
+        "fatalities": "27",
+        "summary": "The aircraft crashed during an instrument approach after a go-around, nearly inverted, into a hangar. Spacial disorientation of the crew precipitated by refraction of the landing or approach lights during transition from flying IFR to visual reference to the ground."
+      },
+      {
+        "date": "12/20/1972",
+        "operator": "Delta Air Lines/ North Central Airlines",
+        "fatalities": "10",
+        "summary": "The Delta Convair, taxing across Runway 27L, after landing in heavy fog, was hit by the North Central DC-9 as it took off, shearing off its tail. The DC-9 came crashing back down on the runway and caught fire. Ten people out of 45 aboard the DC-9 were killed. None of the 88 aboard the Convair were killed. The ATC gave ambiguous instructions to the Delta crew, did not use all available information to determine the location of the CV-880 and the CV-880 crew did not request clarification of the controller's instructions."
+      },
+      {
+        "date": "06/09/1979",
+        "operator": "Skystream Airlines",
+        "fatalities": "2",
+        "summary": ""
+      },
+      {
+        "date": "11/15/1979",
+        "operator": "American Airlines",
+        "fatalities": "0",
+        "summary": "While en route from Chicago to Washington an explosive device detonated in the baggage compartment. The aircraft was flying at an altitude of approximately 34,500 feet, when the flight crew experienced a noise which they described as a thump. Smoke subsequently filled the cabin and the aircraft was forced to make an emergency landing at Washington-Dulles Airport. The bomb was planted by the Unabomber, a man who had been accused of attacks over an 18-year period. He was arrested in April 1996 and subsequently received a life sentence."
+      },
+      {
+        "date": "12/08/2005",
+        "operator": "Southwest Airlines",
+        "fatalities": "0",
+        "summary": "The jetliner slid off Runway 13C at Chicago's Midway Airport, went through an airport boundary fence and crashed into two vehicles at a nearby intersection, killing a young 6- year-old boy. Heavy snow was falling at the time of the accident. The plane had circled the airport for 30 to 35 minutes before attempting to land. The pilots' failure to use available reverse thrust in a timely manner to safely slow or stop the airplane after landing, which resulted in a runway overrun. This failure occurred because the pilots' first experience and lack of familiarity with the airplane's autobrake system distracted them from thrust reverser usage during the challenging landing. Contributing to the accident were Southwest Airline's 1) failure to provide its pilots with clear and consistent guidance and training regarding company policies and procedures related to arrival landing distance calculations; 2) programming and design of its onboard performance computer, which did not present inherent assumptions in the program critical to pilot decision making; 3) plan to implement new autobrake procedures without a familiarization period; and 4) failure to include a margin of safety in the arrival assessment to account for operational uncertainties. Also contributing to the accident was the pilots' failure to divert to another airport given reports that included poor braking action and a tailwind component greater than 5 knots. Contributing to the severity of the accident was the absence of an engineering materials arresting system, which was needed because of the limited runway safety area beyond the departure end of runway 31C."
+      }
+    ],
+    "causes": {
+      "Engine Failure": 3,
+      "Severe Weather": 3,
+      "Stall": 2,
+      "Fire": 2,
+      "Fog": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 0.8666666666666667,
+    "description": "High risk zone with 13 recorded incidents. Primary factor: Engine Failure."
+  },
+  {
+    "name": "Amsterdam, Netherlands",
+    "lat": 52.3676,
+    "lon": 4.9041,
+    "count": 8,
+    "totalFatalities": 53,
+    "crashes": [
+      {
+        "date": "07/14/1935",
+        "operator": "KLM Royal Dutch Airlines",
+        "fatalities": "6",
+        "summary": "The plane lost altitude while attempting an emergency landing after taking off and losing an engine. The wing hit a dyke and the plane burst into flames."
+      },
+      {
+        "date": "12/09/1938",
+        "operator": "KLM Royal Dutch Airlines",
+        "fatalities": "4",
+        "summary": "Struck a dyke near Schiphol Airport and caught fire while taking off."
+      },
+      {
+        "date": "11/14/1946",
+        "operator": "KLM Royal Dutch Airlines",
+        "fatalities": "26",
+        "summary": "The flight crashed during a third landing attempt in inclement weather. The pilot, not lined up with the runway, made a sharp left turn. The wing hit the ground and the aircraft exploded in flames."
+      },
+      {
+        "date": "05/25/1953",
+        "operator": "KLM Royal Dutch Airlines",
+        "fatalities": "0",
+        "summary": "While taking off the plane reached a height of about  50 ft. after which flaps were retracted. The plane began to lose height and crash landed into a meadow. While no one on the plane died, two girls on a bicycle path were killed."
+      },
+      {
+        "date": "09/14/1986",
+        "operator": "Kondair",
+        "fatalities": "1",
+        "summary": "The pilot, lacking experience overcorrected a movement in responding to windshear and couldn't  retain control when the aircraft entered a spiral dive as a result of the overcorrection."
+      },
+      {
+        "date": "10/04/1992",
+        "operator": "El Al",
+        "fatalities": "4",
+        "summary": "Shortly after taking off from Schiphol Airport, while climbing through 6,500 feet, the No. 3 engine separated with its pylon from the aircraft and damaged the leading edge of the right wing. The No. 3 engine separated in such a way that the No. 4 engine and pylon also separated from the wing. During an attempted return to the airport, the aircraft crashed into a 11 story building in the Bijlmermeer residential district. The design and certification of the B-747 pylon was found to be inadequate to provide the required level of safety. The system to ensure structural integrity by inspection failed. The separation of the No. 3 engine was initiated by fatigue (corrosion) in the inboard midspar fuse pin. This led to loss of the No. 4 engine and pylon and damage to several systems which ultimately led to loss of control of the aircraft."
+      },
+      {
+        "date": "04/04/1994",
+        "operator": "KLM Cityhopper",
+        "fatalities": "3",
+        "summary": "Shortly after taking off, the plane experienced engine problems and returned to the airport. While attempting to land the aircraft rolled to the right, pitched up, stalled and cashed. Inadequate use of the flight controls during an asymmetrigo-around resulting in loss of control. Contributing factors were insufficient understanding of the flightcrew of the SAAB 340B engine oil system, lack of awareness of the consequences of an aircraft configuration with one engine in flight idle and poor crew resource management."
+      },
+      {
+        "date": "02/25/2009",
+        "operator": "Turkish Airlines",
+        "fatalities": "9",
+        "summary": "The plane was on final approach to Runway 18R when it crashed 1 mile short of the runway into a field and broke in three. Nine people were killed and 55 injured. Preliminary indications show a false reading from a faulty altimeter caused an autopilot to sharply slow the jet, landing short of the runway"
+      }
+    ],
+    "causes": {
+      "Engine Failure": 3,
+      "Fire": 1,
+      "Stall": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 0.5333333333333333,
+    "description": "High risk zone with 8 recorded incidents. Primary factor: Engine Failure."
+  },
+  {
+    "name": "Near Moscow, Russia",
+    "lat": 55.5,
+    "lon": 37.6,
+    "count": 1,
+    "totalFatalities": 9,
+    "crashes": [
+      {
+        "date": "11/06/1936",
+        "operator": "Deruluft",
+        "fatalities": "9",
+        "summary": "Pilot error."
+      }
+    ],
+    "causes": {},
+    "primaryRisk": "Unknown",
+    "riskIntensity": 0.06666666666666667,
+    "description": "High risk zone with 1 recorded incidents. Primary factor: Unknown."
+  },
+  {
+    "name": "Anchorage, Alaska",
+    "lat": 61.2181,
+    "lon": -149.9003,
+    "count": 15,
+    "totalFatalities": 152,
+    "crashes": [
+      {
+        "date": "09/18/1944",
+        "operator": "U. S. Air Force",
+        "fatalities": "19",
+        "summary": "Struck the side of a mountain while in full flight. Cause unknown but weather conditions suspected."
+      },
+      {
+        "date": "11/15/1952",
+        "operator": "Military - U.S. Air Force",
+        "fatalities": "20",
+        "summary": "Disappeared while en route. No trace of the aircraft was ever found."
+      },
+      {
+        "date": "08/15/1966",
+        "operator": "NC Simpson - Taxi",
+        "fatalities": "4",
+        "summary": "Fatigue fracture on right wing leading to inflight separation in flight."
+      },
+      {
+        "date": "11/27/1970",
+        "operator": "Capital Airlines",
+        "fatalities": "47",
+        "summary": "The military charter overran the runway during takeoff, hit the ILS localizer support structure and burst into flames. The lack of acceleration, undetected by the crew  until after V1 speed was reached caused by the main landing gear wheels remaining locked after power was applied for takeoff on the icy runway due to brake or hydraulifailure."
+      },
+      {
+        "date": "07/21/1971",
+        "operator": "Anchorage Helicopter - Air Taxi",
+        "fatalities": "3",
+        "summary": "The aircraft took off from a roadside lodging, hit wires and crashed and burned. Pilot failed to see and avoid obstruction."
+      },
+      {
+        "date": "01/03/1976",
+        "operator": "Winship Air",
+        "fatalities": "6",
+        "summary": "Crashed short of the runway in fog. The pilot descended below published minimums because of low fuel.  Inadequate preflight planning. Improper IFR operation."
+      },
+      {
+        "date": "01/13/1977",
+        "operator": "Japan Air Lines",
+        "fatalities": "5",
+        "summary": "The cargo plane crashed while attempting to take off. Alcoholiimpairment of captain. Flightcrew members did not prevent captain from attempting to fly. Blood alcohol of 0.21."
+      },
+      {
+        "date": "07/12/1979",
+        "operator": "Soldotna Air Services",
+        "fatalities": "7",
+        "summary": "Crashed in low ceiling and rain. Fluxgate compass inoperative because of chafed wires."
+      },
+      {
+        "date": "10/08/1979",
+        "operator": "Spernak Airway - Air Taxi",
+        "fatalities": "4",
+        "summary": "The plane suffered engine failure on takeoff and crashed. Water in fuel. Improperly serviced aircraft."
+      },
+      {
+        "date": "07/25/1984",
+        "operator": "Air Taxi",
+        "fatalities": "5",
+        "summary": "Disappeared en route. Aircraft and occupants never found. Reasons undetermined."
+      },
+      {
+        "date": "04/01/1987",
+        "operator": "Air Taxi",
+        "fatalities": "2",
+        "summary": "The aircraft was on the last leg of a commuter flight when it crashed in a heavily wooded area while making a VFR approach to Merrill Field. The plane struck the ground in a near vertical attitude. Fuel starvation. Auxiliary tank had fuel but the engines could not be restarted from those tanks."
+      },
+      {
+        "date": "03/31/1993",
+        "operator": "Japan Air Lines",
+        "fatalities": "0",
+        "summary": "The No.2 engine and pylon separated from the aircraft at 2,000 feet. The plane landed safely. The engine separation was due to an encounter with severe or possibly extreme turbulence and a fatigue crack."
+      },
+      {
+        "date": "09/22/1995",
+        "operator": "Military - U.S. Air Force",
+        "fatalities": "24",
+        "summary": "The aircraft suffered multiple bird strikes in the No. 1 and 2 engines just after taking off when it flew into a flock of 100 or more Canada Geese. The crew initiated a slow climb and began to dump fuel. The aircraft attained a maximum altitude of 250 ft. before it started to descend. The plane impacted a hilly wooded area less than a mile from the runway, broke up, exploded and burned.  Ingestion of Canada geese into the Nos.1 and 2 engines. Lack of adequate procedures to reduce bird hazards. The crew was not warned about observations of birds in the area by the ATC."
+      },
+      {
+        "date": "09/23/1996",
+        "operator": "Air Taxi - Stearns Air Alaska",
+        "fatalities": "3",
+        "summary": "After taking off, the aircraft stopped climbing, struck a pole and crashed and burn. Improper installation of a connecting bolt in the throttle linkage, which resulted in a worn/disconnected throttle arm, partial loss of engine power, and a forced landing after takeoff."
+      },
+      {
+        "date": "10/18/2001",
+        "operator": "ERA Aviation - Air Taxi",
+        "fatalities": "3",
+        "summary": "The helicopter was flying very low because the pilot was not instrument rated. The skid hit the water followed by the tail rotor and the helicopter crashed. The pilot's failure to maintain clearance from the surface of an open body of water while intentionally attempting to maintain a very low altitude while in cruise flight. Factors include falling snow, low ceilings, whiteout/greyout conditions, and flat/glassy water."
+      }
+    ],
+    "causes": {
+      "Mountainous Terrain": 1,
+      "Fog": 1,
+      "Severe Weather": 2,
+      "Engine Failure": 5,
+      "Stall": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 1,
+    "description": "High risk zone with 15 recorded incidents. Primary factor: Engine Failure."
+  },
+  {
+    "name": "Cairo, Egypt",
+    "lat": 30.0444,
+    "lon": 31.2357,
+    "count": 16,
+    "totalFatalities": 367,
+    "crashes": [
+      {
+        "date": "08/24/1946",
+        "operator": "Misrair",
+        "fatalities": "6",
+        "summary": "Crashed and caught fire."
+      },
+      {
+        "date": "11/19/1951",
+        "operator": "Devlet Hava Yollari",
+        "fatalities": "5",
+        "summary": "Crashed into a sand dune while attempting to land."
+      },
+      {
+        "date": "02/09/1953",
+        "operator": "Military - Egyptian Air Force",
+        "fatalities": "30",
+        "summary": "Crashed into a hill during a sandstorm."
+      },
+      {
+        "date": "09/15/1954",
+        "operator": "Misrair",
+        "fatalities": "3",
+        "summary": "Stalled and crashed during a test flight."
+      },
+      {
+        "date": "02/20/1956",
+        "operator": "Transport Aerien Intercontinentaux (France)",
+        "fatalities": "52",
+        "summary": "The flight crashed while on approach 18 miles SE of Cairo.  Pilot's inexperience in ILS approaches.  Improper approach.  Crew error. Crew fatigue."
+      },
+      {
+        "date": "06/12/1961",
+        "operator": "KLM Royal Dutch Airlines",
+        "fatalities": "20",
+        "summary": "Crashed into power lines during the approach, 4 km short of the runway. Crew's neglect to cockpit duties."
+      },
+      {
+        "date": "05/15/1962",
+        "operator": "United Arab Airlines",
+        "fatalities": "3",
+        "summary": "The cargo plane crashed shortly after taking off."
+      },
+      {
+        "date": "12/15/1963",
+        "operator": "Misrair",
+        "fatalities": "6",
+        "summary": "Crashed shortly after taking off."
+      },
+      {
+        "date": "05/20/1965",
+        "operator": "Pakistan International Airlines",
+        "fatalities": "119",
+        "summary": "The aircraft  crashed during its approach.The plane descended during the approach at triple the normal rate until the aircraft struck the ground. The aircraft exceeded the recommended descent rate during the final stages of landing for reasons unknown."
+      },
+      {
+        "date": "07/07/1965",
+        "operator": "Military - Soviet Air Force",
+        "fatalities": "30",
+        "summary": "Crashed and burned after taking off from Almaza Airport."
+      },
+      {
+        "date": "03/18/1966",
+        "operator": "United Arab Airlines",
+        "fatalities": "30",
+        "summary": "Crashed into sand dunes. Improper approach during a sandstorm with turbulence and icing. Descent of the aircraft below the safe flight altitude in the final approach."
+      },
+      {
+        "date": "10/10/1974",
+        "operator": "EgyptAir",
+        "fatalities": "6",
+        "summary": "The aircraft lost control while taking off and crashed. Pilot error. Stalled."
+      },
+      {
+        "date": "11/12/1980",
+        "operator": "Military - U.S. Air Force",
+        "fatalities": "13",
+        "summary": "Descended at an excessive sink rate at a banked angle until it crashed to the ground as it prepared to land at Cairo Airport."
+      },
+      {
+        "date": "05/29/1981",
+        "operator": "Military - Egyptian Air Force",
+        "fatalities": "17",
+        "summary": ""
+      },
+      {
+        "date": "06/10/1986",
+        "operator": "EgyptAir",
+        "fatalities": "23",
+        "summary": "Crashed short of runway and collided with a building during a sandstorm."
+      },
+      {
+        "date": "03/31/1988",
+        "operator": "Arax Airlines",
+        "fatalities": "4",
+        "summary": "During a second attempt to take off an engine on the cargo plane failed causing the plane to crash at the end of the runway."
+      }
+    ],
+    "causes": {
+      "Fire": 1,
+      "Severe Weather": 3,
+      "Stall": 2,
+      "Engine Failure": 1
+    },
+    "primaryRisk": "Severe Weather",
+    "riskIntensity": 1,
+    "description": "High risk zone with 16 recorded incidents. Primary factor: Severe Weather."
+  },
+  {
+    "name": "Denver, Colorado",
+    "lat": 39.7392,
+    "lon": -104.9903,
+    "count": 8,
+    "totalFatalities": 58,
+    "crashes": [
+      {
+        "date": "02/14/1947",
+        "operator": "Slick Airways",
+        "fatalities": "2",
+        "summary": "Cargo flight. The momentary loss of control or overcontrol by the pilot at a critically low altitude in the final stages of an ILS approach. A contributing factor was the failure of the safety pilot to remain alert to the altitude of the aircraft."
+      },
+      {
+        "date": "12/04/1951",
+        "operator": "United Air Lines",
+        "fatalities": "3",
+        "summary": "Stalled, entered a spin and crashed. An inadvertent spin at an altitude too low for recovery."
+      },
+      {
+        "date": "07/11/1961",
+        "operator": "United Air Lines",
+        "fatalities": "17",
+        "summary": "Following takeoff from Omaha, hydraulidifficulties were experienced. The flight was continued to Denver where the aircraft experienced asymmetrical reverse thrust while landing and crashed into a maintenance truck and burned. Asymmetrical thrust during the landing attempt due to a hydrauliemergency.  Numbers 1 & 2 thrust reversers failed.  The crew failed to activate the back-up high-pressure air bottle used to hold the reverse ejectors in the extended position during a hydrauliemergency.  Poor evacuation procedures.  A contributing factor was the  failure of the first officer to monitor the thrust reverse indicator lights when applying reverse thrust and the crew's lack of training and knowledge on the aircraft's hydraulisystem. The driver of the maintenance truck was killed."
+      },
+      {
+        "date": "12/21/1967",
+        "operator": "Frontier Airlines",
+        "fatalities": "2",
+        "summary": "The cargo plane crashed on takeoff. The failure of the crew to perform a pre-takeoff control check resulting in takeoff with the elevators immobilized by a control batten."
+      },
+      {
+        "date": "10/03/1969",
+        "operator": "Metro Commuter - Air Taxi",
+        "fatalities": "5",
+        "summary": "Crash landed off of airport. Engine failure. Improper operation of powerplant controls. Pilot accepted weather below MDA for approach."
+      },
+      {
+        "date": "08/07/1975",
+        "operator": "Continental Airlines",
+        "fatalities": "0",
+        "summary": "The aircraft climbed to about 100 feet above runway 35L and then crashed near the departure end of the runway. At the time of the accident, a thunderstorm with associated rain showers was moving over the northern portion of the airport. The aircraft's encounter, immediately following takeoff, with severe windshear at an altitude and airspeed which precluded recovery to level flight."
+      },
+      {
+        "date": "11/15/1987",
+        "operator": "Continental Airlines",
+        "fatalities": "28",
+        "summary": "During a snowstorm in Denver, the flight was delayed 27 minutes after de-icing. When the aircraft took off, the crew experienced a rapid rotation during takeoff, overturned and crashed. Icing. Failure of the captain to de-ice a second time."
+      },
+      {
+        "date": "02/27/1990",
+        "operator": "Federal Express",
+        "fatalities": "1",
+        "summary": "While on an ILS approach, the cargo plane encountered icing conditions. Subsequently it entered a steep descent and crashed short of the runway. The accumulation of structural ice and subsequent stalling of the aircraft. The icing condition was a related factor."
+      }
+    ],
+    "causes": {
+      "Stall": 2,
+      "Severe Weather": 3,
+      "Engine Failure": 1
+    },
+    "primaryRisk": "Severe Weather",
+    "riskIntensity": 0.5333333333333333,
+    "description": "High risk zone with 8 recorded incidents. Primary factor: Severe Weather."
+  },
+  {
+    "name": "Bogota, Colombia",
+    "lat": 4.711,
+    "lon": -74.0721,
+    "count": 21,
+    "totalFatalities": 483,
+    "crashes": [
+      {
+        "date": "02/15/1947",
+        "operator": "AVIANCA",
+        "fatalities": "53",
+        "summary": "The plane crashed into Mt. El Tabalazo at 10,500 feet in fog while en route."
+      },
+      {
+        "date": "08/13/1949",
+        "operator": "SAETA",
+        "fatalities": "32",
+        "summary": "Crashed in the Andes mountains while  en route."
+      },
+      {
+        "date": "04/02/1951",
+        "operator": "AVIANCA",
+        "fatalities": "26",
+        "summary": ""
+      },
+      {
+        "date": "04/19/1960",
+        "operator": "Lloyd Aereo Colombiano",
+        "fatalities": "37",
+        "summary": "Crashed during final approach. The pilot failed to take proper action to counteract the loss of speed and height in the final approach turn. Lack of pilot experience."
+      },
+      {
+        "date": "03/08/1964",
+        "operator": "Taxi Aereo de Santander",
+        "fatalities": "28",
+        "summary": "Crashed during final approach. Evasive maneuver to avoid a mid-air collision with another aircraft caused the pilot to lose control of the aircraft."
+      },
+      {
+        "date": "09/22/1966",
+        "operator": "Avianca",
+        "fatalities": "2",
+        "summary": "The cargo plane struck trees at the end of the runway after trying to make an emergency landing. Material failure consisting in fatigue failure of a number of teeth of the pinion of the governor control unit, which was jammed against the rack in the 'up' position and therefore set for maximum rpm, thus causing the engine to overspeed. This would be in keeping with the fact that the dome ring was at maximum low pitch setting, i.e. high rpm and a runway propeller on take-off."
+      },
+      {
+        "date": "12/18/1966",
+        "operator": "Aerocondor de Colombia",
+        "fatalities": "17",
+        "summary": "Crash landed short of the runway on approach in fog. Pilot error. Presence of unauthorized person in the cockpit distracting the pilot. Lack of cockpit supervision. Poor weather."
+      },
+      {
+        "date": "08/27/1973",
+        "operator": "Aerovias Brasil",
+        "fatalities": "42",
+        "summary": "Crashed into El Cable Mountain after taking off in fog."
+      },
+      {
+        "date": "07/24/1974",
+        "operator": "Aeronorte Colombia",
+        "fatalities": "3",
+        "summary": "The cargo plane crashed into a mountain at 7,000 ft. shortly after taking off."
+      },
+      {
+        "date": "07/10/1975",
+        "operator": "Aerovias Condor",
+        "fatalities": "2",
+        "summary": "The cargo plane barely took off when it settled back on the runway and crashed into a DC-6. Both planes destroyed."
+      },
+      {
+        "date": "01/15/1976",
+        "operator": "Taxi Aereo el Venado",
+        "fatalities": "13",
+        "summary": "Hit an 11,620 ft. mountain in poor weather."
+      },
+      {
+        "date": "04/10/1977",
+        "operator": "Taxi Aereo el Venado",
+        "fatalities": "35",
+        "summary": "Crashed on the slopes of the Rio Guape mountains. Found 1 month later. Deviation from course."
+      },
+      {
+        "date": "04/29/1978",
+        "operator": "LAC Colombia",
+        "fatalities": "8",
+        "summary": "Crashed on farmland six miles outside of Bogota shortly after taking off."
+      },
+      {
+        "date": "08/22/1979",
+        "operator": "SATENA",
+        "fatalities": "1",
+        "summary": "Illegal flight."
+      },
+      {
+        "date": "02/24/1984",
+        "operator": "Taxi Aéreo del Guaviare",
+        "fatalities": "7",
+        "summary": ""
+      },
+      {
+        "date": "11/27/1989",
+        "operator": "AVIANCA",
+        "fatalities": "107",
+        "summary": "The plane burst into flames and crashed shortly after taking off from El Dorado Airport. Detonation of an explosive device placed on the floor on the starboard side of the passenger cabin at seat 15F which ignited fuel vapors in an empty fuel tank. The bomb was placed by members of the drug cartel headed by Pablo Escobar in an attempt to kill presidental candidate Cesare Gaviria. He was not aboard the flight."
+      },
+      {
+        "date": "09/19/1992",
+        "operator": "Avesca Colombia",
+        "fatalities": "11",
+        "summary": "Crashed short of the runway after attempting an emergency return to the airport after takeoff. Engine failure."
+      },
+      {
+        "date": "02/20/1993",
+        "operator": "Cargo Three Panama",
+        "fatalities": "2",
+        "summary": "The cargo plane attempted to return to the airport after an engine caught fire but crashed in a field."
+      },
+      {
+        "date": "03/23/1994",
+        "operator": "Orion - Air Taxi",
+        "fatalities": "4",
+        "summary": "The plane crashed during an approach to Bogota."
+      },
+      {
+        "date": "04/20/1998",
+        "operator": "Air France",
+        "fatalities": "53",
+        "summary": "The aircraft, leased from TAME, crashed atop fog covered Cerro el Cable mountain and exploded into flames, three minutes after taking off from Bogota's El Dorado airport. The aircraft was leased to Air France by TAME airlines. The crew did not turn in the proper direction after reaching the Romeo non-directional beacon even though the flight crew acknowledged an air trafficontroller's warning that they were off course."
+      },
+      {
+        "date": "07/07/2008",
+        "operator": "Centurian Air Cargo",
+        "fatalities": "0",
+        "summary": "The cargo plane carrying a load of flowers had taken off from Bogota when the crew radioed that they had an engine fire. They attempted to return to the airport, but crashed in a field and destroyed a farm house killing three people inside."
+      }
+    ],
+    "causes": {
+      "Fog": 4,
+      "Mountainous Terrain": 6,
+      "Engine Failure": 4,
+      "Fire": 2
+    },
+    "primaryRisk": "Mountainous Terrain",
+    "riskIntensity": 1,
+    "description": "High risk zone with 21 recorded incidents. Primary factor: Mountainous Terrain."
+  },
+  {
+    "name": "Ankara, Turkey",
+    "lat": 39.9334,
+    "lon": 32.8597,
+    "count": 10,
+    "totalFatalities": 229,
+    "crashes": [
+      {
+        "date": "03/25/1950",
+        "operator": "Devlet Hava Yollairi",
+        "fatalities": "15",
+        "summary": "Crashed and caught fire during landing at Etimeagut airport."
+      },
+      {
+        "date": "09/25/1953",
+        "operator": "Devlet Hava Yollari",
+        "fatalities": "5",
+        "summary": "Crashed to the ground after an engine fire."
+      },
+      {
+        "date": "01/19/1960",
+        "operator": "Scandinavian Airlines (SAS)",
+        "fatalities": "42",
+        "summary": "While on a flight from Istanbul to Ankara, Turkey the aircraft crashed while on approach to Esenboga Airport, 6 nm short of the runway. The aircraft struck the ground at an elevation of 3,500 ft, between the Ankara mountain range and the airport. An unintentional descent below the authorized minimum flight altitude during final approach to Esenboga Airport for reasons that could not be determined. The aircraft was named Orm Viking."
+      },
+      {
+        "date": "09/23/1961",
+        "operator": "Turkish Airlines (THY)",
+        "fatalities": "28",
+        "summary": "Crashed into high terrain on approach, 18 kms from Ankara Airport. The aircraft was not in a normal flying  pattern and below normal altitude."
+      },
+      {
+        "date": "12/21/1961",
+        "operator": "British European Airways",
+        "fatalities": "27",
+        "summary": "Shortly after taking off from Esenboga Airport, the aircraft assumed an excessively steep climbing angle, stalled and crashed. The probable cause of the accident was the obstruction of the pitch pointer in the captain's director horizon which led him to make an excessively steep climb. One of three screws had worked its way loose and blocked the pointer on the dial from indicating the correct pitch."
+      },
+      {
+        "date": "02/01/1963",
+        "operator": "Middle East Airlines / Military - Turkish Air ForceC-47",
+        "fatalities": "17",
+        "summary": "Midair collision between a civilian and military aircraft. Both planes crashed into a heavily populated area destroying buildings, houses and vehicles. Fourteen killed on the Viscount, three on the C-47 and 87 on the ground. Cause attributed to a military flight training zone extending into the approach pattern associated with civilian aircraft. The Viscount aircraft had an IFR flight plan but was cruising under VFR conditions and did not see the C-47 until it was too late."
+      },
+      {
+        "date": "02/03/1964",
+        "operator": "Turkish Airlines (THY)",
+        "fatalities": "3",
+        "summary": "The cargo plane crashed short of the runway while on approach. Improper IFR procedure. Descended below MDA."
+      },
+      {
+        "date": "12/23/1979",
+        "operator": "Turkish Airlines (THY)",
+        "fatalities": "41",
+        "summary": "Crashed into Cubuk Hill in fog, two minutes away from landing at the airport.  In-flight structural failure due to severe turbulence. The aircraft was named 'Trabzon.'"
+      },
+      {
+        "date": "01/16/1983",
+        "operator": "Turkish Airlines (THY)",
+        "fatalities": "47",
+        "summary": "The flight originated in West Germany and stopped in Istanbul before beginning a 40-minute flight to Ankara's Esenboga Airport. The aircraft crashed short of the runway in fog, snow and poor visibility. Windshear."
+      },
+      {
+        "date": "01/25/2000",
+        "operator": "Top Air - Air Taxi",
+        "fatalities": "4",
+        "summary": "The aircraft crashed near a pond 25 km from Cubuk, 20 minutes after taking off. Failure to use de-icing and poor weather was to blame."
+      }
+    ],
+    "causes": {
+      "Fire": 2,
+      "Engine Failure": 1,
+      "Mountainous Terrain": 1,
+      "Severe Weather": 3,
+      "Stall": 1,
+      "Fog": 2
+    },
+    "primaryRisk": "Severe Weather",
+    "riskIntensity": 0.6666666666666666,
+    "description": "High risk zone with 10 recorded incidents. Primary factor: Severe Weather."
+  },
+  {
+    "name": "Tehran, Iran",
+    "lat": 35.6892,
+    "lon": 51.389,
+    "count": 11,
+    "totalFatalities": 413,
+    "crashes": [
+      {
+        "date": "09/14/1950",
+        "operator": "Iran Air",
+        "fatalities": "8",
+        "summary": "Crashed during takeoff."
+      },
+      {
+        "date": "12/23/1951",
+        "operator": "Misrair",
+        "fatalities": "22",
+        "summary": "Crashed at Mehrabad airport during a third landing attempt."
+      },
+      {
+        "date": "12/25/1952",
+        "operator": "Iran Air",
+        "fatalities": "27",
+        "summary": "Crashed while landing."
+      },
+      {
+        "date": "03/15/1974",
+        "operator": "Sterling Airways",
+        "fatalities": "15",
+        "summary": "Collapse of right main landing gear while taxing ruptured the wing fuel tank causing a fire."
+      },
+      {
+        "date": "08/02/1976",
+        "operator": "Korean Airlines",
+        "fatalities": "5",
+        "summary": "Instead of turning on course the cargo plane continued straight and hit a mountain."
+      },
+      {
+        "date": "09/29/1981",
+        "operator": "Military - Iranian Air Force",
+        "fatalities": "60",
+        "summary": "Crashed into Tir Square while on approach to land. Killed were Iran's Defense Minister and other military officals."
+      },
+      {
+        "date": "02/08/1993",
+        "operator": "Iran Air Tours  /  Military - Iranian Air Force",
+        "fatalities": "133",
+        "summary": "Midair collision with an Iranian Air Force fighter while taking off. One hundred thirty-one killed on the Tupolev and one killed on the Su-24."
+      },
+      {
+        "date": "02/02/2000",
+        "operator": "Military - IslamiRepubliof Iran Air Force",
+        "fatalities": "8",
+        "summary": "Crashed on take off."
+      },
+      {
+        "date": "04/20/2005",
+        "operator": "Saha Airline Services",
+        "fatalities": "3",
+        "summary": "Soon after experiencing a hard landing an engine began burning while the aircraft was taxiing. The plane then skidded of the runway and fell into the Kan River. One of the passenger's infant fell into the river and drowned while exiting the aircraft."
+      },
+      {
+        "date": "12/06/2005",
+        "operator": "Military - IslamiRepubliof Iran Air Force",
+        "fatalities": "94",
+        "summary": "The military plane crashed into an apartment building in the Azari district after taking off from Mehrabad Airport. The plane suffered engine failure and was attempting to return for a emergency landing."
+      },
+      {
+        "date": "11/27/2006",
+        "operator": "Military - Iranian Revolutionary Guard Corps Air Force",
+        "fatalities": "38",
+        "summary": "The aircraft crashed after losing the right engine during a critical point in the takeoff. The plane stalled, veered to the right and crashed in flames. Three survivors later died in the hospital."
+      }
+    ],
+    "causes": {
+      "Fire": 1,
+      "Mountainous Terrain": 1,
+      "Engine Failure": 3,
+      "Stall": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 0.7333333333333333,
+    "description": "High risk zone with 11 recorded incidents. Primary factor: Engine Failure."
+  },
+  {
+    "name": "Rome, Italy",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "count": 8,
+    "totalFatalities": 170,
+    "crashes": [
+      {
+        "date": "01/14/1954",
+        "operator": "Philippine Air Lines",
+        "fatalities": "16",
+        "summary": "Crashed in a steep dive while making an IFR landing in turbulence following an engine fire. Probably lost a wing during a pull out from a steep dive."
+      },
+      {
+        "date": "02/13/1955",
+        "operator": "Sabena",
+        "fatalities": "29",
+        "summary": "Crashed into a mountain while on approach. Navigational error due to failure to use radio equipment."
+      },
+      {
+        "date": "12/21/1959",
+        "operator": "Alitalia",
+        "fatalities": "2",
+        "summary": "Crashed into a hanger during a practice landing. The accident was attributed to a balked landing maneuver carried out below the speed limits for safe directional control of the aircraft during a critical situation that developed in the last phase of the landing in the course of a simulated emergency exercise with two power units inoperative."
+      },
+      {
+        "date": "03/08/1962",
+        "operator": "Societa Aerea Mediterranea",
+        "fatalities": "5",
+        "summary": "The cargo plane crashed into Mt. Velino while en route."
+      },
+      {
+        "date": "11/23/1964",
+        "operator": "Trans World Airlines",
+        "fatalities": "50",
+        "summary": "The captain decided to abort the takeoff after the No. 4 engine pressure ratio read zero thrust and the amber warning light indicating thrust reversal of No. 2 engine came on. The speed was below V1. The aircraft continued to travel past the runway limit and the No. 4 engine struck a steam roller. The aircraft burst into flames. Malfunction of the No. 2 engine reverse thruster. The malfunction allowed in the development of forward thrust by No. 2 engine even though all four levers were in the reverse position."
+      },
+      {
+        "date": "12/17/1973",
+        "operator": "Pan American World Airways",
+        "fatalities": "30",
+        "summary": "Two phosphorus bombs were thrown into the aircraft prior to its departure. The aircraft was named 'Clipper Celestial.'"
+      },
+      {
+        "date": "11/19/1977",
+        "operator": "Ethiopian Airlines",
+        "fatalities": "5",
+        "summary": "The cargo plane failed to gain altitude and crashed into trees."
+      },
+      {
+        "date": "10/17/1988",
+        "operator": "Uganda Airlines",
+        "fatalities": "33",
+        "summary": "Undershot runway and hit  a building while performing a third landing attempt in fog. The crew's lack of adequate preparation in the procedure for a non-precision approach, especially in crew coordination, altitude callouts and their continued descent beyond MDA without having located the runway visual markings. Crew fatigue."
+      }
+    ],
+    "causes": {
+      "Engine Failure": 2,
+      "Fire": 1,
+      "Mountainous Terrain": 1,
+      "Fog": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 0.5333333333333333,
+    "description": "High risk zone with 8 recorded incidents. Primary factor: Engine Failure."
+  },
+  {
+    "name": "Manila, Philippines",
+    "lat": 14.5995,
+    "lon": 120.9842,
+    "count": 17,
+    "totalFatalities": 172,
+    "crashes": [
+      {
+        "date": "06/02/1958",
+        "operator": "Pan American World Airways",
+        "fatalities": "1",
+        "summary": "A hard landing in heavy rain and gusty winds at Manila caused the collapse of the right main landing gear. A prop broke off the No. 3 engine, penetrated the cabin and killed one passenger. The aircraft was named 'Clipper Golden Gate.'"
+      },
+      {
+        "date": "07/14/1960",
+        "operator": "Northwest Orient Airlines",
+        "fatalities": "1",
+        "summary": "After a loss of power in the No. 2 engine the crew was unable to feather the prop. An emergency descent was made and the plane ditched into the ocean. Upon contact with the water, the aft end of the fuselage broke free at the rear of the pressure bulkhead, the right wing  tore free and the engines separated. The wing floated for 3hrs, serving as a life raft for  passengers. The remainder of the fuselage, sank some 10 minutes after impact.  Passengers were rescued 6 hours after the accident. Failure of No. 2  engine, resulting in oil contamination, loss of oil supply, subsequent loss of the No. 2 propeller assembly and fire-in-flight, which necessitated a ditching."
+      },
+      {
+        "date": "11/23/1960",
+        "operator": "Philippine Air Lines",
+        "fatalities": "33",
+        "summary": "Crashed into Mt. Baco while en route. Navigational error under adverse weather conditions."
+      },
+      {
+        "date": "10/12/1962",
+        "operator": "Philippine Air Lines",
+        "fatalities": "3",
+        "summary": "Crashed while practicing take offs and landings."
+      },
+      {
+        "date": "10/20/1965",
+        "operator": "Philippine Air Lines",
+        "fatalities": "1",
+        "summary": "The aircraft veered to the left after taking off. The pilot lost control and crashed. Failure of the pilot to set the rudder trim tab to the proper position before takeoff and during the flight. Undetected deflection of the rudder trim tab."
+      },
+      {
+        "date": "04/21/1970",
+        "operator": "Philippine Air Lines",
+        "fatalities": "36",
+        "summary": "The aircraft was on a flight from Cauayan, Isabela to Manila when it crashed into mountainous terrain after an explosion in the rear lavatory of the aircraft  broke off the tail section."
+      },
+      {
+        "date": "07/25/1971",
+        "operator": "Pan American World Airways",
+        "fatalities": "4",
+        "summary": "While on a VOR/DME approach to Manila runway 24, the aircraft struck Mount Kamunay at an altitude of 2,525 feet, 20 miles east/northeast of the Manila VOR. The probable cause was improper crew coordination, which caused a premature descent."
+      },
+      {
+        "date": "11/15/1974",
+        "operator": "Orient Air System and Integrated Services",
+        "fatalities": "1",
+        "summary": "The No.2 prop was feathered when the engine failed after taking off. The aircraft lost altitude during a 180 degree turn and a forced landing was made in a rice field."
+      },
+      {
+        "date": "02/03/1975",
+        "operator": "Philippine Air Lines",
+        "fatalities": "32",
+        "summary": "The No. 2 engine caught fire shortly after takeoff.  The aircraft crashed into a rice field 3 miles short of the runway while making an emergency approach back to the airport."
+      },
+      {
+        "date": "06/03/1975",
+        "operator": "Philippine Air Lines",
+        "fatalities": "1",
+        "summary": "A bomb exploded in the right rear lavatory causing a hole in the fuselage. The plane landed safely."
+      },
+      {
+        "date": "02/27/1980",
+        "operator": "China Airlines (Taiwan)",
+        "fatalities": "2",
+        "summary": "The aircraft undershot the runway and bounced twice. The two outboard engines broke loose and the wingtips were ripped off. A fire broke out and spread rapidly. Pilot error."
+      },
+      {
+        "date": "07/21/1989",
+        "operator": "Philippine Air Lines",
+        "fatalities": "1",
+        "summary": "In heavy rain the aircraft bounced twice, crashed through a concreate wall, overran the runway, crossed a road and struck several cars."
+      },
+      {
+        "date": "04/26/1990",
+        "operator": "MATS - Manila Aero Transport System",
+        "fatalities": "7",
+        "summary": "The plane crashed into a rice field after an engine failed during a landing attempt and the plane attempted to take off again, crashing outside of the airport boundary."
+      },
+      {
+        "date": "05/11/1990",
+        "operator": "Philippine Air Lines",
+        "fatalities": "8",
+        "summary": "There was an explosion in the center fuel tank while the aircraft was being pushed back for flight. Ignition of vapors in the empty center tank probably resulted from faulty wiring. Several causes have been presumed including chafed insulation on the wiring for the center fuel tank float level switch and damaged insulation on the wiring of the nearby wing anti-ice valve."
+      },
+      {
+        "date": "05/18/1990",
+        "operator": "Aerolift Philippines",
+        "fatalities": "21",
+        "summary": "Crashed shortly after taking off. The aircraft never gained more than 400 feet in altitude and crashed into houses killing four people. Failure of the right engine, after which, the pilot  made an immediate right turn, stalled the aircraft and crashed. Failure to maintain adequate flying speed and altitude due to the pilot's inability to properly perform the specified emergency procedures following a malfunction of the right engine immediately after take off. Failure of the engine."
+      },
+      {
+        "date": "05/25/2000",
+        "operator": "Philippine Air Lines",
+        "fatalities": "1",
+        "summary": "A hijacker robbed passengers, jumped out of the plane with a homemade parachute and was killed in the jump."
+      },
+      {
+        "date": "11/11/2002",
+        "operator": "Laoag International Airlines",
+        "fatalities": "19",
+        "summary": "The plane experienced failure of the left engine shortly after taking off from Ninoy Aquino airport. The pilot declared and emergency and the aircraft ditched into Manila Bay and breaking up about one-half mile offshore. Fuel starvation. Failure of the pilot and co-pilot to check the fuel valve and failure to observe safety standards and measures.  Poor management and maintenance procedures."
+      }
+    ],
+    "causes": {
+      "Engine Failure": 8,
+      "Severe Weather": 3,
+      "Fire": 3,
+      "Mountainous Terrain": 1,
+      "Stall": 1
+    },
+    "primaryRisk": "Engine Failure",
+    "riskIntensity": 1,
+    "description": "High risk zone with 17 recorded incidents. Primary factor: Engine Failure."
+  }
+]

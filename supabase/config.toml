@@ -1,0 +1,7 @@
+project_id = "txfckbeafowmfaaarpnm"
+
+[functions.opensky-proxy]
+verify_jwt = false
+
+[functions.aviation-stack-proxy]
+verify_jwt = false
